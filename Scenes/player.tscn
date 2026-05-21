@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cpticq4tu2qux"]
 
+[ext_resource type="Script" uid="uid://dtbdfwux1auoj" path="res://Scripts/player.gd" id="1_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://b0nrhoitg52ll" path="res://Assets/Sprites/sprite right.png" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://crclpyqxophoh" path="res://Assets/Sprites/ChatGPT Image May 19, 2026, 10_10_19 AM.png" id="2_6t5aa"]
 
@@ -111,9 +112,11 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=858460380]
+script = ExtResource("1_6t5aa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616269152]
 position = Vector2(1, 0)
 scale = Vector2(0.2998533, 0.32771263)
 sprite_frames = SubResource("SpriteFrames_fd4e3")
 animation = &"Right"
+frame_progress = 0.06349061
