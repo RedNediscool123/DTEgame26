@@ -3,22 +3,6 @@
 [ext_resource type="Script" uid="uid://dtbdfwux1auoj" path="res://Scripts/player.gd" id="1_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://bx4jsgwkrk7fr" path="res://Assets/Sprites/NulBoy_SpriteSheet/CharacterSpriteSheet.png" id="2_cvnsp"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_igrcy"]
-atlas = ExtResource("2_cvnsp")
-region = Rect2(36, 0, 12, 18)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fs7ks"]
-atlas = ExtResource("2_cvnsp")
-region = Rect2(24, 0, 12, 18)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l6n3p"]
-atlas = ExtResource("2_cvnsp")
-region = Rect2(12, 0, 12, 18)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_olqyp"]
-atlas = ExtResource("2_cvnsp")
-region = Rect2(0, 0, 12, 18)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
 atlas = ExtResource("2_cvnsp")
 region = Rect2(0, 0, 12, 18)
@@ -85,38 +69,6 @@ region = Rect2(36, 54, 12, 18)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fd4e3"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_igrcy")
-}],
-"loop": true,
-"name": &"attack_down",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fs7ks")
-}],
-"loop": true,
-"name": &"attack_left",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l6n3p")
-}],
-"loop": true,
-"name": &"attack_right",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_olqyp")
-}],
-"loop": true,
-"name": &"attack_up",
-"speed": 5.0
-}, {
 "frames": [],
 "loop": true,
 "name": &"idle_down",
@@ -213,6 +165,6 @@ script = ExtResource("1_6t5aa")
 position = Vector2(-5.722046e-06, -1)
 scale = Vector2(1.7927517, 1.9790752)
 sprite_frames = SubResource("SpriteFrames_fd4e3")
-animation = &"attack_down"
+animation = &"idle_down"
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
