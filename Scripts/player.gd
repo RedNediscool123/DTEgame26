@@ -24,8 +24,6 @@ func process_animation(direction: Vector2) -> void:
 	if direction != Vector2.ZERO:
 		last_direction = direction  # Update last direction while moving
 		play_animation("run", direction)
-	else:
-		play_animation("idle", last_direction)  # Use last_direction when idle
 
 func play_animation(prefix: String, dir: Vector2) -> void:
 	if dir.x > 0:
@@ -39,3 +37,8 @@ func play_animation(prefix: String, dir: Vector2) -> void:
 		
 		
 		
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	print("In")
+	var alive = false
