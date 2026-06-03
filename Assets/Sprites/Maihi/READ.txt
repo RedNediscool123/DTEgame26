@@ -1,0 +1,10 @@
+Hello, thank you downloading!
+
+
+Put all of the contents of the folder included here
+into your projects' "images" folder.
+
+Put maihi.rpy into your project's "game" folder, 
+where your script.rpy and other files are located.
+
+that's all! showcase and explanation is located in maihi.rpy

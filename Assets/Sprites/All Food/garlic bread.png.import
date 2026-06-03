@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://cwiyvyybh0woo"
+path="res://.godot/imported/garlic bread.png-66d75b9169334d146d9ccced11558cea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/All Food/garlic bread.png"
+dest_files=["res://.godot/imported/garlic bread.png-66d75b9169334d146d9ccced11558cea.ctex"]
 
 [params]
 

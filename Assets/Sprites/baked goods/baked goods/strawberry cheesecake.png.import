@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://d4kjjqs56s4xa"
+path="res://.godot/imported/strawberry cheesecake.png-3a5c8d357117c84a682ad1881cdfc031.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/baked goods/baked goods/strawberry cheesecake.png"
+dest_files=["res://.godot/imported/strawberry cheesecake.png-3a5c8d357117c84a682ad1881cdfc031.ctex"]
 
 [params]
 

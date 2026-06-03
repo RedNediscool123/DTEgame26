@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://df23qy4uu8kdq"
+path="res://.godot/imported/cinnamon roll.png-1b04469e25d4d6277b50bfae7995f1b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/baked goods/baked goods/cinnamon roll.png"
+dest_files=["res://.godot/imported/cinnamon roll.png-1b04469e25d4d6277b50bfae7995f1b3.ctex"]
 
 [params]
 

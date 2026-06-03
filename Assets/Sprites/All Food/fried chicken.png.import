@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://dfi1k573gfohj"
+path="res://.godot/imported/fried chicken.png-05d1bfc166f1efb764805b8b39ea048f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/All Food/fried chicken.png"
+dest_files=["res://.godot/imported/fried chicken.png-05d1bfc166f1efb764805b8b39ea048f.ctex"]
 
 [params]
 

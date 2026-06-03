@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://bv0fau4tve4t4"
+path="res://.godot/imported/brown sugar chocochip cookie.png-bd3a4fb186dee1707d244b017a63f6cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/baked goods/baked goods/brown sugar chocochip cookie.png"
+dest_files=["res://.godot/imported/brown sugar chocochip cookie.png-bd3a4fb186dee1707d244b017a63f6cc.ctex"]
 
 [params]
 

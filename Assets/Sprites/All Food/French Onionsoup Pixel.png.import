@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://bl5qqv1k8aisj"
+path="res://.godot/imported/French Onionsoup Pixel.png-c7232964cbb9f72cd14b146ea6f1982a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/All Food/French Onionsoup Pixel.png"
+dest_files=["res://.godot/imported/French Onionsoup Pixel.png-c7232964cbb9f72cd14b146ea6f1982a.ctex"]
 
 [params]
 

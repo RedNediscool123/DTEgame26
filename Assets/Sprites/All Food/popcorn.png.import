@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://dymbwihb6gqw0"
+path="res://.godot/imported/popcorn.png-d7b181fabd2f2021c76756e1a09c0468.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/All Food/popcorn.png"
+dest_files=["res://.godot/imported/popcorn.png-d7b181fabd2f2021c76756e1a09c0468.ctex"]
 
 [params]
 

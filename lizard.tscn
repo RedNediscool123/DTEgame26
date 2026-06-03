@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cy57xrmmbu5fo"]
+
+[ext_resource type="Texture2D" uid="uid://bckx3iy42nck7" path="res://Assets/Sprites/TerinIdle-Sheet.png" id="1_4qrxi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhscj"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3htrm"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vq3nh"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yap1v"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nd7il"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbse5"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ejxs3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhscj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3htrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vq3nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yap1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nd7il")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbse5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1213791455]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2101235711]
+sprite_frames = SubResource("SpriteFrames_ejxs3")
+frame = 1
+frame_progress = 0.24905875

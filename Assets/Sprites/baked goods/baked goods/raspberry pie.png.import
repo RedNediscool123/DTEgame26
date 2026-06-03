@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://bmmqlt67g5t0w"
+path="res://.godot/imported/raspberry pie.png-1e14bd9f7644e05fdee37d25fbcd9031.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/baked goods/baked goods/raspberry pie.png"
+dest_files=["res://.godot/imported/raspberry pie.png-1e14bd9f7644e05fdee37d25fbcd9031.ctex"]
 
 [params]
 

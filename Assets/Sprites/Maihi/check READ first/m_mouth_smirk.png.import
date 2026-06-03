@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://b1sntseq6nkuk"
+path="res://.godot/imported/m_mouth_smirk.png-0ef4df7efd7df039e41c51abb70cde9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/Maihi/check READ first/m_mouth_smirk.png"
+dest_files=["res://.godot/imported/m_mouth_smirk.png-0ef4df7efd7df039e41c51abb70cde9b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://vcj8vvm8ky3j"
+path="res://.godot/imported/croissant .png-cb3c613b8dedc5823620ae608f753a2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/baked goods/baked goods/croissant .png"
+dest_files=["res://.godot/imported/croissant .png-cb3c613b8dedc5823620ae608f753a2c.ctex"]
 
 [params]
 

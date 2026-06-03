@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://bvd54yxtacdnw"
+path="res://.godot/imported/m_eyebrow_suspicious.png-7f109980b043daed6108b1929322ca20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/Maihi/check READ first/m_eyebrow_suspicious.png"
+dest_files=["res://.godot/imported/m_eyebrow_suspicious.png-7f109980b043daed6108b1929322ca20.ctex"]
 
 [params]
 

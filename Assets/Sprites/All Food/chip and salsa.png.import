@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://dd0bd7s53fbf0"
+path="res://.godot/imported/chip and salsa.png-f535760b1bb4789303a22824efadd17a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/All Food/chip and salsa.png"
+dest_files=["res://.godot/imported/chip and salsa.png-f535760b1bb4789303a22824efadd17a.ctex"]
 
 [params]
 

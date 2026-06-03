@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://bcmw3ccj8qebq"
+path="res://.godot/imported/maihi_showcase3.png-f8af35e8a428194a8e337733cd78dcba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/Maihi/check READ first/maihi_showcase3.png"
+dest_files=["res://.godot/imported/maihi_showcase3.png-f8af35e8a428194a8e337733cd78dcba.ctex"]
 
 [params]
 

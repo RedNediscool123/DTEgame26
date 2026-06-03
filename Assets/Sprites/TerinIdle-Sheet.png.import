@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://bckx3iy42nck7"
+path="res://.godot/imported/TerinIdle-Sheet.png-a64b8e28ec986593bd09ba31edeb08eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/TerinIdle-Sheet.png"
+dest_files=["res://.godot/imported/TerinIdle-Sheet.png-a64b8e28ec986593bd09ba31edeb08eb.ctex"]
 
 [params]
 

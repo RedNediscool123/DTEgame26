@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djg0ojmcwwqyf"
-path="res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"
+uid="uid://byot25kno4s18"
+path="res://.godot/imported/macaron purple.png-0356b8320f3e80ec613184971494bb69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/corn.enemy.png"
-dest_files=["res://.godot/imported/corn.enemy.png-53904c5721b04261e0f026807e040120.ctex"]
+source_file="res://Assets/Sprites/baked goods/baked goods/macaron purple.png"
+dest_files=["res://.godot/imported/macaron purple.png-0356b8320f3e80ec613184971494bb69.ctex"]
 
 [params]
 
