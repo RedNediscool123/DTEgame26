@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dhlnw37mnti48"]
+
+[node name="DialogUI" type="Control" unique_id=160086467]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Speech box" type="PanelContainer" parent="." unique_id=613064201]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -130.0
+offset_right = -4.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Name box" type="PanelContainer" parent="." unique_id=1424820533]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -197.0
+offset_right = 207.0
+offset_bottom = -137.0
+grow_vertical = 0
+
+[node name="Control" type="Control" parent="." unique_id=284563908]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Arrow" type="Polygon2D" parent="Control" unique_id=882418642]
+position = Vector2(2, 2)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(0, 0, 50, 25, 0, 50)

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bwrli60yi6f0u"]
+
+[ext_resource type="Texture2D" uid="uid://bnfdp2262ubxu" path="res://Assets/Sprites/ChatGPT Image Jun 4, 2026, 09_35_56 AM.png" id="1_dpk2q"]
+[ext_resource type="PackedScene" uid="uid://cy57xrmmbu5fo" path="res://lizard.tscn" id="2_t734m"]
+[ext_resource type="PackedScene" uid="uid://dhlnw37mnti48" path="res://dialog_ui.tscn" id="3_t734m"]
+
+[node name="Node2D" type="Node2D" unique_id=1246861989]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1729143392]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1402570075]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dpk2q")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1597181801]
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=1226717473]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = -149.0
+offset_right = -23.0
+offset_bottom = -109.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Lizard" parent="CanvasLayer2/Control" unique_id=1213791455 instance=ExtResource("2_t734m")]
+position = Vector2(-188, -127)
+
+[node name="DialogUI" parent="CanvasLayer2" unique_id=160086467 instance=ExtResource("3_t734m")]

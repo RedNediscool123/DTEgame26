@@ -52,9 +52,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=1213791455]
+[node name="Lizard" type="Node2D" unique_id=1213791455]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2101235711]
+position = Vector2(-1.0000038, -3.8146973e-06)
+scale = Vector2(6.8046875, 6.2285156)
 sprite_frames = SubResource("SpriteFrames_ejxs3")
-frame = 1
-frame_progress = 0.24905875
+autoplay = "default"
+frame_progress = 0.66925395

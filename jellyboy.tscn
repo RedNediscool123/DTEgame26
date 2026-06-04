@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://clj2wwj8itsye"]
+
+[ext_resource type="Texture2D" uid="uid://b0pxu6q5rku4n" path="res://Assets/Sprites/ChatGPT_Image_Jun_4__2026__10_09_55_PM-removebg-preview-removebg-preview.png" id="1_2o0e1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8oe76"]
+atlas = ExtResource("1_2o0e1")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3lad"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8oe76")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Jellyboy" type="Node2D" unique_id=1562712914]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1573306168]
+sprite_frames = SubResource("SpriteFrames_x3lad")
+frame_progress = 0.060184047
