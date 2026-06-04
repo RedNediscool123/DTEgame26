@@ -1,5 +1,40 @@
 [gd_scene format=3 uid="uid://dhlnw37mnti48"]
 
+[ext_resource type="FontFile" uid="uid://t64qcdyokw0" path="res://Assets/fonts/mochi-boom-demo/Mochi Boom DEMO.ttf" id="1_ewnsd"]
+
+[sub_resource type="Theme" id="Theme_ucd2t"]
+default_font = ExtResource("1_ewnsd")
+RichTextLabel/font_sizes/bold_font_size = 25
+RichTextLabel/font_sizes/bold_italics_font_size = 25
+RichTextLabel/font_sizes/italics_font_size = 25
+RichTextLabel/font_sizes/mono_font_size = 25
+RichTextLabel/font_sizes/normal_font_size = 25
+RichTextLabel/fonts/normal_font = ExtResource("1_ewnsd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yihbo"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0, 0, 0, 0.40392157)
+border_width_top = 2
+border_color = Color(0.8, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="Theme" id="Theme_yihbo"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_yihbo")
+
+[sub_resource type="Theme" id="Theme_ewnsd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p47hq"]
+font = ExtResource("1_ewnsd")
+font_size = 36
+font_color = Color(0.72156864, 0.59607846, 1, 1)
+
 [node name="DialogUI" type="Control" unique_id=160086467]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +42,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_ucd2t")
 
 [node name="Speech box" type="PanelContainer" parent="." unique_id=613064201]
 layout_mode = 1
@@ -20,6 +56,12 @@ offset_right = -4.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = SubResource("Theme_yihbo")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Speech box" unique_id=547269659]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b][shake][i][wave]This is a line of dialogue[/wave]..."
 
 [node name="Name box" type="PanelContainer" parent="." unique_id=1424820533]
 custom_minimum_size = Vector2(200, 60)
@@ -27,11 +69,19 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 7.0
-offset_top = -197.0
-offset_right = 207.0
-offset_bottom = -137.0
+offset_left = 3.0
+offset_top = -208.0
+offset_right = 203.0
+offset_bottom = -132.0
 grow_vertical = 0
+theme = SubResource("Theme_ewnsd")
+
+[node name="Label" type="Label" parent="Name box" unique_id=1760149938]
+layout_mode = 2
+text = "Name"
+label_settings = SubResource("LabelSettings_p47hq")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Control" type="Control" parent="." unique_id=284563908]
 layout_mode = 1
