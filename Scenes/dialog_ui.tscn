@@ -65,6 +65,7 @@ unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "[b][shake][i][wave]This is a line of dialogue[/wave]..."
+scroll_active = false
 
 [node name="Name box" type="PanelContainer" parent="." unique_id=1424820533]
 custom_minimum_size = Vector2(200, 60)

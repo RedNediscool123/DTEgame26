@@ -2,54 +2,105 @@
 
 [ext_resource type="Texture2D" uid="uid://bckx3iy42nck7" path="res://Assets/Sprites/TerinIdle-Sheet.png" id="1_4qrxi"]
 [ext_resource type="Script" uid="uid://b88k6esin2ct8" path="res://Scripts/character.gd" id="1_38w1r"]
+[ext_resource type="Texture2D" uid="uid://b0pxu6q5rku4n" path="res://Assets/Sprites/ChatGPT_Image_Jun_4__2026__10_09_55_PM-removebg-preview-removebg-preview.png" id="2_ejsiy"]
+[ext_resource type="Texture2D" uid="uid://bgw2x17tnihmg" path="res://Assets/Sprites/water_melon.png" id="4_2mse5"]
+[ext_resource type="Texture2D" uid="uid://fqbac6a32o8b" path="res://Assets/Sprites/rock_melon.png" id="5_reotu"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lhscj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5ess"]
+atlas = ExtResource("2_ejsiy")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejsiy"]
 atlas = ExtResource("1_4qrxi")
 region = Rect2(0, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3htrm"]
-atlas = ExtResource("1_4qrxi")
-region = Rect2(128, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbia7"]
+atlas = ExtResource("4_2mse5")
+region = Rect2(0, 0, 447, 558)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vq3nh"]
-atlas = ExtResource("1_4qrxi")
-region = Rect2(256, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq7hj"]
+atlas = ExtResource("5_reotu")
+region = Rect2(0, 0, 447, 558)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yap1v"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mse5"]
 atlas = ExtResource("1_4qrxi")
-region = Rect2(384, 0, 128, 128)
+region = Rect2(0, 0, 128, 25)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nd7il"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_reotu"]
 atlas = ExtResource("1_4qrxi")
-region = Rect2(512, 0, 128, 128)
+region = Rect2(128, 0, 128, 25)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cbse5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7iw6i"]
 atlas = ExtResource("1_4qrxi")
-region = Rect2(640, 0, 128, 128)
+region = Rect2(256, 0, 128, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1rcp"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(384, 0, 128, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_le1tg"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(512, 0, 128, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2daya"]
+atlas = ExtResource("1_4qrxi")
+region = Rect2(640, 0, 128, 25)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ejxs3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lhscj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3htrm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vq3nh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yap1v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nd7il")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cbse5")
+"texture": SubResource("AtlasTexture_a5ess")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Jelly",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejsiy")
+}],
+"loop": true,
+"name": &"Lizard",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbia7")
+}],
+"loop": true,
+"name": &"Mello",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq7hj")
+}],
+"loop": true,
+"name": &"Rocky",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mse5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_reotu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7iw6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1rcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_le1tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2daya")
+}],
+"loop": true,
+"name": &"You",
 "speed": 5.0
 }]
 
@@ -57,8 +108,8 @@ animations = [{
 script = ExtResource("1_38w1r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2101235711]
-position = Vector2(-1.0000038, -3.8146973e-06)
-scale = Vector2(6.8046875, 6.2285156)
+position = Vector2(3, 2.0000305)
+scale = Vector2(0.836, 0.94000006)
 sprite_frames = SubResource("SpriteFrames_ejxs3")
-autoplay = "default"
-frame_progress = 0.66925395
+animation = &"You"
+autoplay = "Lizard"
