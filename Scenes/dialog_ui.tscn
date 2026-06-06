@@ -2,6 +2,8 @@
 
 [ext_resource type="FontFile" uid="uid://t64qcdyokw0" path="res://Assets/fonts/mochi-boom-demo/Mochi Boom DEMO.ttf" id="1_ewnsd"]
 [ext_resource type="Script" uid="uid://b878ghh8ln4yj" path="res://Scripts/dialog_ui.gd" id="2_dy63b"]
+[ext_resource type="AudioStream" uid="uid://j827wu55s8gr" path="res://Assets/sound_effects/text-regular_83vLb7RH.mp3" id="3_kymi5"]
+[ext_resource type="Script" uid="uid://dxc6awcd7cat3" path="res://Scripts/text_blip_sound.gd" id="3_yqatb"]
 
 [sub_resource type="Theme" id="Theme_ucd2t"]
 default_font = ExtResource("1_ewnsd")
@@ -45,6 +47,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_ucd2t")
 script = ExtResource("2_dy63b")
+
+[node name="SentencePauseTimer" type="Timer" parent="." unique_id=2078872600]
+unique_name_in_owner = true
+wait_time = 0.35
+one_shot = true
+
+[node name="TextBlipSound" type="AudioStreamPlayer" parent="." unique_id=1009594001]
+stream = ExtResource("3_kymi5")
+volume_db = -10.09
+script = ExtResource("3_yqatb")
 
 [node name="Speech box" type="PanelContainer" parent="." unique_id=613064201]
 layout_mode = 1
