@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dhlnw37mnti48"]
 
 [ext_resource type="FontFile" uid="uid://t64qcdyokw0" path="res://Assets/fonts/mochi-boom-demo/Mochi Boom DEMO.ttf" id="1_ewnsd"]
+[ext_resource type="Script" uid="uid://b878ghh8ln4yj" path="res://Scripts/dialog_ui.gd" id="2_dy63b"]
 
 [sub_resource type="Theme" id="Theme_ucd2t"]
 default_font = ExtResource("1_ewnsd")
@@ -43,6 +44,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_ucd2t")
+script = ExtResource("2_dy63b")
 
 [node name="Speech box" type="PanelContainer" parent="." unique_id=613064201]
 layout_mode = 1
@@ -58,7 +60,8 @@ grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_yihbo")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Speech box" unique_id=547269659]
+[node name="dialogue_text" type="RichTextLabel" parent="Speech box" unique_id=547269659]
+unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "[b][shake][i][wave]This is a line of dialogue[/wave]..."
@@ -76,7 +79,8 @@ offset_bottom = -132.0
 grow_vertical = 0
 theme = SubResource("Theme_ewnsd")
 
-[node name="Label" type="Label" parent="Name box" unique_id=1760149938]
+[node name="speaker_name" type="Label" parent="Name box" unique_id=1760149938]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Name"
 label_settings = SubResource("LabelSettings_p47hq")
