@@ -5,30 +5,10 @@ extends Node2D
 @onready var sound_player = $AudioStreamPlayer
 
 var dialog_index: int = 0
-
-const dialogue_text: Array[String] = [
-	"Lizard: !!!!!!!!!!!", 
-	"Lizard: Hello there! I'm here! over here, I'm just a bit small",
-	"Lizard: Hello, nice to finally meet you, press enter or space, or just click to continue",
-	"Lizard: Wow! you're getting the hang of this already!",
-	"Lizard: You're probably wondering why you're here, aren't you?",
-	"Lizard: Well I can tell you! In fact i'd be happy to tell you",
-	"Jelly: HOLD IT! [sound:res://Assets/sound_effects/crash_5mE1q2P.mp3]",
-	"Lizard: JELLY?!",
-	"Lizard: DID YOU JUST BREAK THE WINDOW?!", 
-	"Jelly: You slimy lizard! I'll get you back this time!",
-	"Jelly: ...",
-	"Jelly: Wait... Who's that?",
-	"Jelly: Ugh! Nevermind! I'll deal with you stupid lizard first!",
-	"Jelly: Huh! He's gone already! This can't be!",
-	"Jelly: Catch you later, stranger...",
-	"Jelly: GET BACK HERE YOU QUADRUPEDAL PEST!!",
-	"You: Well that was strange...",
-	"Rocky: Hello stranger! Wait.. why are you in our house?",
-	"Rocky: Oh well, have you seen a lizard and a jelly person around? I'm kinda looking for them",
-]
+var dialogue_text: Array = []
 
 func _ready():
+	dialogue_text = load_dialog("res://Assets/Story/story.json")
 	dialog_index = 0
 	process_current_line()
 
@@ -41,27 +21,25 @@ func _input(event):
 				dialog_index += 1
 				process_current_line()
 
-func parse_line(line: String):
-	var sound = ""
-	var clean_line = line
-	if "[sound:" in line:
-		var start = line.find("[sound:") + 7
-		var end = line.find("]", start)
-		sound = line.substr(start, end - start)
-		clean_line = line.substr(0, line.find("[sound:")).strip_edges()
-	var parts = clean_line.split(":")
-	assert(len(parts) >= 2)
-	return {
-		"speaker_name": parts[0],
-		"dialogue_text": parts[1],
-		"sound": sound
-	}
+func load_dialog(file_path):
+	if not FileAccess.file_exists(file_path):
+		printerr("File does not exist: ", file_path)
+		return []
+	var file = FileAccess.open(file_path, FileAccess.READ)
+	if file == null:
+		printerr("Error: failed to open the file: ", file_path)
+		return []
+	var content = file.get_as_text()
+	var json_content = JSON.parse_string(content)
+	if json_content == null:
+		printerr("Failed to parse JSON from file: ", file_path)
+		return []
+	return json_content
 
 func process_current_line():
-	var line = dialogue_text[dialog_index]
-	var line_info = parse_line(line)
-	dialogui.change_line(line_info["speaker_name"], line_info["dialogue_text"])
-	character.change_character(line_info["speaker_name"])
-	if line_info["sound"] != "":
+	var line_info = dialogue_text[dialog_index]
+	dialogui.change_line(line_info["speaker"], line_info["text"])
+	character.change_character(line_info["speaker"])
+	if line_info.has("sound"):
 		sound_player.stream = load(line_info["sound"])
 		sound_player.play()
