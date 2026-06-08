@@ -18,4 +18,19 @@
 	{"speaker": "You", "text": "Well that was strange..."},
 	{"speaker": "Rocky", "text": "Hello stranger! Wait.. why are you in our house?"},
 	{"speaker": "Rocky", "text": "Oh well, have you seen a lizard and a jelly person around? I'm kinda looking for them"},
+	{ "choices":
+		[
+			{ "text": "first choice!" },
+			{ "text": "second choice!" },
+		]
+		},
+		
+		{ "anchor": "first choice" },
+		{"speaker": "Rocky", "text": "Thanks! See you later!"},
+		
+		
+		
+		
+		{ "anchor": "second choice" },
+		{"speaker": "Rocky", "text": "Oh... That's too bad"}
 ]

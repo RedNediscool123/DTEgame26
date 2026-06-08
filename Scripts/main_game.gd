@@ -38,8 +38,33 @@ func load_dialog(file_path):
 
 func process_current_line():
 	var line_info = dialogue_text[dialog_index]
+	# Check if this is a goto command
+	if line_info.has("goto"):
+		dialog_index = get_anchor_position(line_info["goto"])
+		process_current_line()
+		return
+	
+	# Check if this is just an anchor declaration (not displayable content)
+	if line_info.has("anchor"):
+		dialog_index += 1
+		process_current_line()
+		return
+	
+	
+	# Reading the line of dialogue
 	dialogui.change_line(line_info["speaker"], line_info["text"])
 	character.change_character(line_info["speaker"])
 	if line_info.has("sound"):
 		sound_player.stream = load(line_info["sound"])
 		sound_player.play()
+		
+		
+func get_anchor_position(anchor: String):
+	#find the anchor entry with matching name
+	for i in range(dialogue_text.size()):
+		if dialogue_text[i].has("anchor") and dialogue_text[i]["anchor"] == anchor:
+			return 1
+			
+	#If we get here, the anchor wasn't found
+	printerr("Error: could not find anchor '" + anchor + "'")
+	return null
