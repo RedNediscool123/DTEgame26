@@ -20,17 +20,17 @@
 	{"speaker": "Rocky", "text": "Oh well, have you seen a lizard and a jelly person around? I'm kinda looking for them"},
 	{ "choices":
 		[
-			{ "text": "first choice!" },
-			{ "text": "second choice!" },
+			{ "text": "first choice!", "goto": "first_choice" },
+			{ "text": "second choice!", "goto": "second_choice" },
 		]
 		},
 		
-		{ "anchor": "first choice" },
+		{ "anchor": "first_choice" },
 		{"speaker": "Rocky", "text": "Thanks! See you later!"},
 		
 		
 		
 		
-		{ "anchor": "second choice" },
+		{ "anchor": "second_choice" },
 		{"speaker": "Rocky", "text": "Oh... That's too bad"}
 ]

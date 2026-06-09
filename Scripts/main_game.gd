@@ -49,16 +49,18 @@ func process_current_line():
 		dialog_index += 1
 		process_current_line()
 		return
-	
-	
-	# Reading the line of dialogue
-	dialogui.change_line(line_info["speaker"], line_info["text"])
-	character.change_character(line_info["speaker"])
-	if line_info.has("sound"):
-		sound_player.stream = load(line_info["sound"])
-		sound_player.play()
 		
 		
+	if line_info.has("choices"):
+		pass
+	else:
+		# Reading the line of dialogue
+		dialogui.change_line(line_info["speaker"], line_info["text"])
+		character.change_character(line_info["speaker"])
+		if line_info.has("sound"):
+			sound_player.stream = load(line_info["sound"])
+			sound_player.play()
+				
 func get_anchor_position(anchor: String):
 	#find the anchor entry with matching name
 	for i in range(dialogue_text.size()):

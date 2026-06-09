@@ -5,8 +5,39 @@
 [ext_resource type="AudioStream" uid="uid://j827wu55s8gr" path="res://Assets/sound_effects/text-regular_83vLb7RH.mp3" id="3_kymi5"]
 [ext_resource type="Script" uid="uid://dxc6awcd7cat3" path="res://Scripts/text_blip_sound.gd" id="3_yqatb"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kymi5"]
+bg_color = Color(0.6392157, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5t5tq"]
+bg_color = Color(0.6392157, 0.19607843, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8, 0.5058824, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t33e6"]
+bg_color = Color(0.6389129, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa70m"]
+bg_color = Color(0.8980392, 0, 0, 0.18039216)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpxmn"]
+bg_color = Color(0.6392157, 0, 0, 1)
+
 [sub_resource type="Theme" id="Theme_ucd2t"]
 default_font = ExtResource("1_ewnsd")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 35
+Button/styles/disabled = SubResource("StyleBoxFlat_kymi5")
+Button/styles/focus = SubResource("StyleBoxFlat_5t5tq")
+Button/styles/hover = SubResource("StyleBoxFlat_t33e6")
+Button/styles/normal = SubResource("StyleBoxFlat_oa70m")
+Button/styles/pressed = SubResource("StyleBoxFlat_bpxmn")
 RichTextLabel/font_sizes/bold_font_size = 25
 RichTextLabel/font_sizes/bold_italics_font_size = 25
 RichTextLabel/font_sizes/italics_font_size = 25
@@ -57,6 +88,25 @@ one_shot = true
 stream = ExtResource("3_kymi5")
 volume_db = -10.09
 script = ExtResource("3_yqatb")
+
+[node name="ChoicesContainer" type="CenterContainer" parent="." unique_id=1479640195]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ChoiceList" type="VBoxContainer" parent="ChoicesContainer" unique_id=847249377]
+layout_mode = 2
+theme_override_constants/separation = 45
+
+[node name="Choice1" type="Button" parent="ChoicesContainer/ChoiceList" unique_id=2083234575]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+text = "This is the first choice
+"
 
 [node name="Speech box" type="PanelContainer" parent="." unique_id=613064201]
 layout_mode = 1
