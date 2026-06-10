@@ -1,5 +1,7 @@
 extends Control
 
+signal choice_selected
+
 # preload the player choice scene
 const ChoiceButtonScene = preload("res://Scenes/player_choice.tscn")
 
@@ -39,16 +41,29 @@ func change_line(speaker: String, line: String):
 	
 
 func display_choices(choices: Array):
-	#create a new button for each choice
+	#clear any existing choices
+	for child in choice_list.get_children():
+		child.queue_free()
+	
+	for child in choice_list.get_children():
+		child.queue_free()
+
 	for choice in choices:
 		var choice_button = ChoiceButtonScene.instantiate()
 		choice_button.text = choice["text"]
 		choice_button.modulate = Color(1, 0, 0)
-		# add the button to choices container
-		choice_list.add_child(choice_button)
+		# Attach signal to the choice
+		choice_button.pressed.connect(_on_choice_button_pressed.bind(choice["goto"]))
 		
-	#show the choice list
+		
+		#add a child instead of copying previous choices
+		choice_list.add_child(choice_button)
+
 	choice_list.show()
+	
+	# wait one frame so sizes are updated, then center
+	await get_tree().process_frame
+	choice_list.position.x = (get_viewport_rect().size.x - choice_list.size.x) / 2
 	
 
 
@@ -56,3 +71,9 @@ func display_choices(choices: Array):
 
 func skip_text_animation():
 	dialogue_text.visible_ratio = 1
+
+
+
+func _on_choice_button_pressed(anchor: String):
+	choice_selected.emit(anchor)
+	choice_list.hide()

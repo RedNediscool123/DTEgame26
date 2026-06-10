@@ -25,7 +25,13 @@ Button/styles/normal = SubResource("StyleBoxFlat_j83g5")
 Button/styles/pressed = SubResource("StyleBoxFlat_vr0p6")
 
 [node name="Choice1" type="Button" unique_id=1579333837]
-custom_minimum_size = Vector2(700, 50)
+custom_minimum_size = Vector2(400, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
 theme = SubResource("Theme_utd2w")
 text = "This is the first choice
 "

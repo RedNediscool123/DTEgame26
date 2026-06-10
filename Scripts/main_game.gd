@@ -11,9 +11,16 @@ func _ready():
 	dialogue_text = load_dialog("res://Assets/Story/story.json")
 	dialog_index = 0
 	process_current_line()
+	
+	# connect signals
+	dialogui.choice_selected.connect(_on_choice_selected)
+	
+	
 
 func _input(event):
-	if event.is_action_pressed("next_line"):
+	var line = dialogue_text[dialog_index]
+	var has_choices = line.has("choices")
+	if event.is_action_pressed("next_line") and not has_choices:
 		if dialogui.animate_text:
 			dialogui.skip_text_animation()
 		else:
@@ -75,5 +82,6 @@ func get_anchor_position(anchor: String):
 	return null
 	
 	
-	
-	
+func _on_choice_selected(anchor: String):
+	dialog_index = get_anchor_position(anchor)
+	process_current_line()
