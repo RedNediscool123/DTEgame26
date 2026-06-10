@@ -14,6 +14,10 @@ config/name="DTEgame26"
 run/main_scene="uid://c5dsgqeat7q20"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+RhythmGameSignals="*uid://wslnrmixnqxn"
+
 [input]
 
 next_line={

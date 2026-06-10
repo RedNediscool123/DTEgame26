@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bi8lq8c3v1jaq"]
+
+[ext_resource type="Script" uid="uid://cmrb5yl7lwv2u" path="res://Scripts/rhythm_game_ui.gd" id="1_204gb"]
+
+[node name="RhythmGameUI" type="Control" unique_id=31235631]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_204gb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1869554673]
+
+[node name="ScoreLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=214720544]
+unique_name_in_owner = true
+offset_left = 14.0
+offset_top = 17.0
+offset_right = 204.0
+offset_bottom = 57.0
+theme_override_font_sizes/normal_font_size = 34
+text = "0 pts"
+scroll_active = false

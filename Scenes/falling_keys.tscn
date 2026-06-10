@@ -3,10 +3,23 @@
 [ext_resource type="Texture2D" uid="uid://dndweiujygb4f" path="res://Assets/Rhythm game assets/Rythm game sprites/arrows.webp" id="1_ykkmv"]
 [ext_resource type="Script" uid="uid://b74fq5xm0ail0" path="res://Scripts/falling_keys.gd" id="2_oxhe6"]
 
-[node name="FallingKeys" type="Sprite2D" unique_id=134999303]
+[node name="FallingKey" type="Sprite2D" unique_id=134999303]
 position = Vector2(358, 324)
 texture = ExtResource("1_ykkmv")
 hframes = 4
 vframes = 3
 frame = 4
 script = ExtResource("2_oxhe6")
+
+[node name="Timer" type="Timer" parent="." unique_id=1502189297]
+unique_name_in_owner = true
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="DestroyTimer" type="Timer" parent="." unique_id=1051803218]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="DestroyTimer" to="." method="_on_destroy_timer_timeout"]

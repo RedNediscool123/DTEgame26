@@ -1,38 +1,37 @@
 [gd_scene format=3 uid="uid://bhe0j8j2vccui"]
 
 [ext_resource type="PackedScene" uid="uid://c0g6b7cxpjfm1" path="res://Scenes/key_listener.tscn" id="1_3robq"]
-[ext_resource type="PackedScene" uid="uid://bkbky2eau2mgj" path="res://Scenes/falling_keys.tscn" id="2_5ko1k"]
+[ext_resource type="PackedScene" uid="uid://bi8lq8c3v1jaq" path="res://Assets/Rhythm game assets/Rhythm game objects/rhythm_game_ui.tscn" id="2_5ko1k"]
 
 [node name="RhythmGameLevel" type="Node2D" unique_id=162667930]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2041524555]
 
 [node name="KeyListener" parent="." unique_id=1489710723 instance=ExtResource("1_3robq")]
-position = Vector2(-143, 287)
+position = Vector2(-143, 279)
 hframes = 4
 vframes = 3
 key_name = "Rhythmleft"
 
 [node name="KeyListener2" parent="." unique_id=448590055 instance=ExtResource("1_3robq")]
-position = Vector2(-48, 287)
+position = Vector2(-48, 279)
 hframes = 4
 vframes = 3
 frame = 1
 key_name = "Rhythmdown"
 
 [node name="KeyListener3" parent="." unique_id=725704035 instance=ExtResource("1_3robq")]
-position = Vector2(47, 287)
+position = Vector2(47, 279)
 hframes = 4
 vframes = 3
 frame = 2
 key_name = "Rhythmup"
 
 [node name="KeyListener4" parent="." unique_id=1370012973 instance=ExtResource("1_3robq")]
-position = Vector2(142, 287)
+position = Vector2(142, 279)
 hframes = 4
 vframes = 3
 frame = 3
 key_name = "Rhythmright"
 
-[node name="FallingKeys" parent="." unique_id=134999303 instance=ExtResource("2_5ko1k")]
-position = Vector2(-143, -369)
+[node name="RhythmGameUI" parent="." unique_id=31235631 instance=ExtResource("2_5ko1k")]

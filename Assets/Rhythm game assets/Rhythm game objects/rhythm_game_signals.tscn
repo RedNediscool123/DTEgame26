@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b7e1yg5t1ipq5"]
+
+[ext_resource type="Script" uid="uid://wslnrmixnqxn" path="res://Scripts/rhythm_game_signals.gd" id="1_8e024"]
+
+[node name="RhythmGameSignals" type="Node2D" unique_id=1416545653]
+script = ExtResource("1_8e024")
