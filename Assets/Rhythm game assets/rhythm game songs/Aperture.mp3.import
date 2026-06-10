@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmge846xggneh"
+path="res://.godot/imported/Aperture.mp3-514e1c69baab1abe82884325aa52780e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rhythm game assets/rhythm game songs/Aperture.mp3"
+dest_files=["res://.godot/imported/Aperture.mp3-514e1c69baab1abe82884325aa52780e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

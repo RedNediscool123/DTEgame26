@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://iesr7bqxddmq"
+path="res://.godot/imported/Subsuming vortex.mp3-6696e88c967da76eba27cfeecf615dcd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rhythm game assets/rhythm game songs/Subsuming vortex.mp3"
+dest_files=["res://.godot/imported/Subsuming vortex.mp3-6696e88c967da76eba27cfeecf615dcd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
