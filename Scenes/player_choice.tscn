@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bwu5r3gcj6885"]
+
+[ext_resource type="FontFile" uid="uid://t64qcdyokw0" path="res://Assets/fonts/mochi-boom-demo/Mochi Boom DEMO.ttf" id="1_krtt2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_krtt2"]
+bg_color = Color(0.84705883, 0.49803922, 0.28235295, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nmnfc"]
+bg_color = Color(0.6, 0.6, 0.6, 0.74509805)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1gpta"]
+bg_color = Color(0.6, 0.6, 0.6, 0.63529414)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j83g5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vr0p6"]
+
+[sub_resource type="Theme" id="Theme_utd2w"]
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_krtt2")
+Button/styles/disabled = SubResource("StyleBoxFlat_krtt2")
+Button/styles/focus = SubResource("StyleBoxFlat_nmnfc")
+Button/styles/hover = SubResource("StyleBoxFlat_1gpta")
+Button/styles/normal = SubResource("StyleBoxFlat_j83g5")
+Button/styles/pressed = SubResource("StyleBoxFlat_vr0p6")
+
+[node name="Choice1" type="Button" unique_id=1579333837]
+custom_minimum_size = Vector2(700, 50)
+theme = SubResource("Theme_utd2w")
+text = "This is the first choice
+"

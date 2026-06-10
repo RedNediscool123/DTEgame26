@@ -52,7 +52,11 @@ func process_current_line():
 		
 		
 	if line_info.has("choices"):
-		pass
+		# Display Choices
+		dialogui.display_choices(line_info["choices"])
+		
+		
+
 	else:
 		# Reading the line of dialogue
 		dialogui.change_line(line_info["speaker"], line_info["text"])
@@ -65,8 +69,11 @@ func get_anchor_position(anchor: String):
 	#find the anchor entry with matching name
 	for i in range(dialogue_text.size()):
 		if dialogue_text[i].has("anchor") and dialogue_text[i]["anchor"] == anchor:
-			return 1
-			
+			return i
 	#If we get here, the anchor wasn't found
 	printerr("Error: could not find anchor '" + anchor + "'")
 	return null
+	
+	
+	
+	
