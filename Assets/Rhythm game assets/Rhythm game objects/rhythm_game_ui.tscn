@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bi8lq8c3v1jaq"]
 
 [ext_resource type="Script" uid="uid://cmrb5yl7lwv2u" path="res://Scripts/rhythm_game_ui.gd" id="1_204gb"]
+[ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="2_cjnxh"]
 
 [node name="RhythmGameUI" type="Control" unique_id=31235631]
 layout_mode = 3
@@ -19,6 +20,20 @@ offset_left = 14.0
 offset_top = 17.0
 offset_right = 204.0
 offset_bottom = 57.0
-theme_override_font_sizes/normal_font_size = 34
+theme_override_fonts/normal_font = ExtResource("2_cjnxh")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
 text = "0 pts"
+scroll_active = false
+
+[node name="Combolabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1612779104]
+unique_name_in_owner = true
+offset_left = 10.0
+offset_top = 57.0
+offset_right = 200.0
+offset_bottom = 97.0
+theme_override_fonts/normal_font = ExtResource("2_cjnxh")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Combo"
 scroll_active = false

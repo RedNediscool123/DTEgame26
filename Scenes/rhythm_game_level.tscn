@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://bhe0j8j2vccui"]
 
+[ext_resource type="Script" uid="uid://b65r3p6aagy1e" path="res://Scripts/rhythm_game_level.gd" id="1_0mokh"]
 [ext_resource type="PackedScene" uid="uid://c0g6b7cxpjfm1" path="res://Scenes/key_listener.tscn" id="1_3robq"]
 [ext_resource type="PackedScene" uid="uid://bi8lq8c3v1jaq" path="res://Assets/Rhythm game assets/Rhythm game objects/rhythm_game_ui.tscn" id="2_5ko1k"]
+[ext_resource type="AudioStream" uid="uid://bl01kb7tbtg62" path="res://Assets/Rhythm game assets/rhythm game songs/Defeated circles.mp3" id="4_ggbi0"]
 
 [node name="RhythmGameLevel" type="Node2D" unique_id=162667930]
+script = ExtResource("1_0mokh")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2041524555]
 
@@ -35,3 +38,6 @@ frame = 3
 key_name = "Rhythmright"
 
 [node name="RhythmGameUI" parent="." unique_id=31235631 instance=ExtResource("2_5ko1k")]
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=712196919]
+stream = ExtResource("4_ggbi0")

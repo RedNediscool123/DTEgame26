@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bl01kb7tbtg62"
+path="res://.godot/imported/Defeated circles.mp3-2ff8237cf910c1da73fbddcf1b3a8ca9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Rhythm game assets/rhythm game songs/Defeated circles.mp3"
+dest_files=["res://.godot/imported/Defeated circles.mp3-2ff8237cf910c1da73fbddcf1b3a8ca9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
