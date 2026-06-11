@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0g6b7cxpjfm1"]
 
 [ext_resource type="Texture2D" uid="uid://dndweiujygb4f" path="res://Assets/Rhythm game assets/Rythm game sprites/arrows.webp" id="1_2dg5l"]
-[ext_resource type="Script" uid="uid://dd6udg2646rl7" path="res://Scripts/key_listener.gd" id="2_rgl2n"]
+[ext_resource type="Script" uid="uid://dd6udg2646rl7" path="res://Scripts/rhythm game/key_listener.gd" id="2_rgl2n"]
 
 [node name="KeyListener" type="Sprite2D" unique_id=1489710723]
 texture = ExtResource("1_2dg5l")

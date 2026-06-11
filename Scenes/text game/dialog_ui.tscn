@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dhlnw37mnti48"]
 
 [ext_resource type="FontFile" uid="uid://t64qcdyokw0" path="res://Assets/fonts/mochi-boom-demo/Mochi Boom DEMO.ttf" id="1_ewnsd"]
-[ext_resource type="Script" uid="uid://b878ghh8ln4yj" path="res://Scripts/dialog_ui.gd" id="2_dy63b"]
+[ext_resource type="Script" uid="uid://b878ghh8ln4yj" path="res://Scripts/text game/dialog_ui.gd" id="2_dy63b"]
 [ext_resource type="AudioStream" uid="uid://j827wu55s8gr" path="res://Assets/sound_effects/text-regular_83vLb7RH.mp3" id="3_kymi5"]
-[ext_resource type="Script" uid="uid://dxc6awcd7cat3" path="res://Scripts/text_blip_sound.gd" id="3_yqatb"]
-[ext_resource type="PackedScene" uid="uid://bwu5r3gcj6885" path="res://Scenes/player_choice.tscn" id="5_5t5tq"]
+[ext_resource type="Script" uid="uid://dxc6awcd7cat3" path="res://Scripts/text game/text_blip_sound.gd" id="3_yqatb"]
+[ext_resource type="PackedScene" uid="uid://bwu5r3gcj6885" path="res://Scenes/text game/player_choice.tscn" id="5_5t5tq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kymi5"]
 bg_color = Color(0.6392157, 0, 0, 1)

@@ -23,16 +23,18 @@
 		
 		
 		{"anchor": "yogurt" },
-		{"speaker": "Lizard", "text": "Which mini game do you want to play?"},
+		{"speaker": "Lizard", "text": "Which rhythm game do you want to play?(exploration mode coming soon)"},
 		{ "choices":
 		[
-			{ "text": "rhythm", "goto": "rhythm" },
-			{ "text": "explore", "goto": "explore" },
+			{ "text": "Defeated Circles(easier)", "goto": "rhythm" },
+			{ "text": "(hella buggy)Subsuming Vortext(extremely harder)", "goto": "explore" },
 		]
 		},
+		{"anchor": "rhythm" },
+		{"scene": "res://Scenes/rhythm game/rhythm_game_level.tscn"},
 		
-		
-		
+		{"anchor": "explore" },
+		{"scene": "res://Scenes/rhythm game/Subsuming_Vortex.tscn"},
 		
 		
 ]

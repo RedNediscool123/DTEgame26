@@ -3,7 +3,7 @@ extends Control
 signal choice_selected
 
 # preload the player choice scene
-const ChoiceButtonScene = preload("res://Scenes/player_choice.tscn")
+const ChoiceButtonScene = preload("res://Scenes/text game/player_choice.tscn")
 
 @onready var dialogue_text = %dialogue_text
 @onready var speaker_name = %speaker_name

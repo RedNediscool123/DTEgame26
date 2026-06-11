@@ -1,6 +1,6 @@
 extends Sprite2D
-@onready var falling_key = preload("res://Scenes/falling_keys.tscn")
-@onready var score_text = preload("res://Scenes/score_press_text.tscn")
+@onready var falling_key = preload("res://Scenes/rhythm game/falling_keys.tscn")
+@onready var score_text = preload("res://Scenes/rhythm game/score_press_text.tscn")
 @export var key_name: String = ""
 # If distance_from_pass is less than threshold, give that score
 var perfect_press_threshold: float = 30

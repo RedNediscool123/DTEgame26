@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cy57xrmmbu5fo"]
 
 [ext_resource type="Texture2D" uid="uid://bckx3iy42nck7" path="res://Assets/Sprites/TerinIdle-Sheet.png" id="1_4qrxi"]
-[ext_resource type="Script" uid="uid://b88k6esin2ct8" path="res://Scripts/character.gd" id="1_38w1r"]
+[ext_resource type="Script" uid="uid://b88k6esin2ct8" path="res://Scripts/text game/character.gd" id="1_38w1r"]
 [ext_resource type="Texture2D" uid="uid://b0pxu6q5rku4n" path="res://Assets/Sprites/ChatGPT_Image_Jun_4__2026__10_09_55_PM-removebg-preview-removebg-preview.png" id="2_ejsiy"]
 [ext_resource type="Texture2D" uid="uid://bgw2x17tnihmg" path="res://Assets/Sprites/water_melon.png" id="4_2mse5"]
 [ext_resource type="Texture2D" uid="uid://fqbac6a32o8b" path="res://Assets/Sprites/rock_melon.png" id="5_reotu"]

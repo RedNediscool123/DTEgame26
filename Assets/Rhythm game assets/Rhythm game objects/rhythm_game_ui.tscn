@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bi8lq8c3v1jaq"]
 
-[ext_resource type="Script" uid="uid://cmrb5yl7lwv2u" path="res://Scripts/rhythm_game_ui.gd" id="1_204gb"]
+[ext_resource type="Script" uid="uid://cmrb5yl7lwv2u" path="res://Scripts/rhythm game/rhythm_game_ui.gd" id="1_204gb"]
 [ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="2_cjnxh"]
 
 [node name="RhythmGameUI" type="Control" unique_id=31235631]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dgpbmpcpsa4aw"]
 
 [ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="1_1cm65"]
-[ext_resource type="Script" uid="uid://behe7rlb0nms7" path="res://Scripts/score_press_text.gd" id="1_exilp"]
+[ext_resource type="Script" uid="uid://behe7rlb0nms7" path="res://Scripts/rhythm game/score_press_text.gd" id="1_exilp"]
 
 [sub_resource type="Theme" id="Theme_exilp"]
 RichTextLabel/fonts/bold_font = null

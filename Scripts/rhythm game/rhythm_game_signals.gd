@@ -4,3 +4,6 @@ signal IncrementCombo
 signal ResetCombo
 signal CreateFallingKey(button_name: String)
 signal KeyListenerPress(button_name: String, array_num: int)
+
+var final_score: int = 0
+var best_combo: int = 0

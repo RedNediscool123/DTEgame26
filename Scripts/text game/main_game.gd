@@ -1,12 +1,9 @@
 extends Node2D
-
 @onready var character = %Lizard
 @onready var dialogui = %DialogUI
 @onready var sound_player = $AudioStreamPlayer
-
 var dialog_index: int = 0
 var dialogue_text: Array = []
-
 func _ready():
 	dialogue_text = load_dialog("res://Assets/Story/story.json")
 	dialog_index = 0
@@ -16,7 +13,6 @@ func _ready():
 	dialogui.choice_selected.connect(_on_choice_selected)
 	
 	
-
 func _input(event):
 	var line = dialogue_text[dialog_index]
 	var has_choices = line.has("choices")
@@ -27,7 +23,6 @@ func _input(event):
 			if dialog_index < len(dialogue_text) - 1:
 				dialog_index += 1
 				process_current_line()
-
 func load_dialog(file_path):
 	if not FileAccess.file_exists(file_path):
 		printerr("File does not exist: ", file_path)
@@ -42,9 +37,14 @@ func load_dialog(file_path):
 		printerr("Failed to parse JSON from file: ", file_path)
 		return []
 	return json_content
-
 func process_current_line():
 	var line_info = dialogue_text[dialog_index]
+	
+	# Check if this is a scene change
+	if line_info.has("scene"):
+		get_tree().change_scene_to_file(line_info["scene"])
+		return
+	
 	# Check if this is a goto command
 	if line_info.has("goto"):
 		dialog_index = get_anchor_position(line_info["goto"])
@@ -63,7 +63,6 @@ func process_current_line():
 		dialogui.display_choices(line_info["choices"])
 		
 		
-
 	else:
 		# Reading the line of dialogue
 		dialogui.change_line(line_info["speaker"], line_info["text"])

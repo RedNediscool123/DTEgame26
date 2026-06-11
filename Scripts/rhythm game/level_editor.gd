@@ -64,3 +64,4 @@ func SpawnFallingKey(button_name: String, delay: float):
 
 func _on_audio_stream_player_2d_finished():
 	print(fk_output_arr)
+	get_tree().change_scene_to_file("res://Scenes/rhythm game/rhythm_result_screen.tscn")
