@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://bhe0j8j2vccui"]
 
-[ext_resource type="Script" uid="uid://b65r3p6aagy1e" path="res://Scripts/rhythm_game_level.gd" id="1_0mokh"]
 [ext_resource type="PackedScene" uid="uid://c0g6b7cxpjfm1" path="res://Scenes/key_listener.tscn" id="1_3robq"]
 [ext_resource type="PackedScene" uid="uid://bi8lq8c3v1jaq" path="res://Assets/Rhythm game assets/Rhythm game objects/rhythm_game_ui.tscn" id="2_5ko1k"]
-[ext_resource type="AudioStream" uid="uid://bl01kb7tbtg62" path="res://Assets/Rhythm game assets/rhythm game songs/Defeated circles.mp3" id="4_ggbi0"]
+[ext_resource type="Texture2D" uid="uid://dvab8j5bbrfay" path="res://Assets/Rhythm game assets/Rythm game sprites/Kitchen Rhythm.png" id="2_ggbi0"]
+[ext_resource type="PackedScene" uid="uid://bm5y2wqsmigu3" path="res://Scenes/level_editor.tscn" id="6_jkjpk"]
 
 [node name="RhythmGameLevel" type="Node2D" unique_id=162667930]
-script = ExtResource("1_0mokh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1284721213]
+position = Vector2(-1.0000107, 1.5000103)
+scale = Vector2(0.82310987, 0.57843137)
+texture = ExtResource("2_ggbi0")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2041524555]
 
@@ -14,30 +18,29 @@ script = ExtResource("1_0mokh")
 position = Vector2(-143, 279)
 hframes = 4
 vframes = 3
-key_name = "Rhythmleft"
+key_name = "button_Q"
 
 [node name="KeyListener2" parent="." unique_id=448590055 instance=ExtResource("1_3robq")]
 position = Vector2(-48, 279)
 hframes = 4
 vframes = 3
 frame = 1
-key_name = "Rhythmdown"
+key_name = "button_W"
 
 [node name="KeyListener3" parent="." unique_id=725704035 instance=ExtResource("1_3robq")]
 position = Vector2(47, 279)
 hframes = 4
 vframes = 3
 frame = 2
-key_name = "Rhythmup"
+key_name = "button_E"
 
 [node name="KeyListener4" parent="." unique_id=1370012973 instance=ExtResource("1_3robq")]
 position = Vector2(142, 279)
 hframes = 4
 vframes = 3
 frame = 3
-key_name = "Rhythmright"
+key_name = "button_R"
 
 [node name="RhythmGameUI" parent="." unique_id=31235631 instance=ExtResource("2_5ko1k")]
 
-[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=712196919]
-stream = ExtResource("4_ggbi0")
+[node name="LevelEditor" parent="." unique_id=407810730 instance=ExtResource("6_jkjpk")]

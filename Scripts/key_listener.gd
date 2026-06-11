@@ -14,10 +14,15 @@ var good_press_score: float = 50
 var ok_press_score: float = 20
 var falling_key_queue = []
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _ready():
+	RhythmGameSignals.CreateFallingKey.connect(CreateFallingKey)
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
+	if Input.is_action_just_pressed(key_name):
+		RhythmGameSignals.KeyListenerPress.emit(key_name, frame)
+	
 	#make sure there is a falling key to check for this given key
 	if falling_key_queue.size() > 0:
 		if Input.is_action_just_pressed(key_name):
@@ -33,18 +38,22 @@ func _process(delta):
 			if distance_from_pass < perfect_press_threshold:
 				RhythmGameSignals.IncrementScore.emit(perfect_press_score)
 				st_inst_text = "PERFECT"
+				RhythmGameSignals.IncrementCombo.emit()
 			elif distance_from_pass < great_press_threshold:
 				RhythmGameSignals.IncrementScore.emit(great_press_score)
 				st_inst_text = "GREAT"
+				RhythmGameSignals.IncrementCombo.emit()
 			elif distance_from_pass < good_press_threshold:
 				RhythmGameSignals.IncrementScore.emit(good_press_score)
 				st_inst_text = "GOOD"
+				RhythmGameSignals.IncrementCombo.emit()
 			elif distance_from_pass < ok_press_threshold:
 				RhythmGameSignals.IncrementScore.emit(ok_press_score)
 				st_inst_text = "OK"
+				RhythmGameSignals.IncrementCombo.emit()
 			else:
 				# MISS
-				pass
+				RhythmGameSignals.ResetCombo.emit()
 			
 			var st_inst = score_text.instantiate()
 			get_tree().get_root().call_deferred("add_child", st_inst)
@@ -57,13 +66,13 @@ func _process(delta):
 	
 	
 	
-func CreateFallingKey():
-	var fk_inst = falling_key.instantiate()
-	get_tree().get_root().add_child(fk_inst)
-	fk_inst.Setup(position.x, frame + 4)
-	
-	falling_key_queue.push_back(fk_inst)
+func CreateFallingKey(button_name: String):
+	if button_name == key_name:
+		var fk_inst = falling_key.instantiate()
+		get_tree().get_root().add_child(fk_inst)
+		fk_inst.Setup(position.x, frame + 4)
+		falling_key_queue.push_back(fk_inst)
 func _on_random_spawn_keys_timeout():
-	CreateFallingKey()
+	#CreateFallingKey()
 	$RandomSpawnTimer.wait_time = randf_range(0.4, 3)
 	$RandomSpawnTimer.start()
