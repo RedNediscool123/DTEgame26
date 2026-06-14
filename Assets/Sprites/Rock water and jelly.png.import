@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhhcqd6xv10e6"
-path="res://.godot/imported/m_eye_default_1.png-27ab6e0fd9685ef1a982948b9dde4495.ctex"
+uid="uid://b7svll6cdbqj"
+path="res://.godot/imported/Rock water and jelly.png-a9d85106792c0ee44dde79046d9a26d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Maihi/check READ first/m_eye_default_1.png"
-dest_files=["res://.godot/imported/m_eye_default_1.png-27ab6e0fd9685ef1a982948b9dde4495.ctex"]
+source_file="res://Assets/Sprites/Rock water and jelly.png"
+dest_files=["res://.godot/imported/Rock water and jelly.png-a9d85106792c0ee44dde79046d9a26d3.ctex"]
 
 [params]
 
