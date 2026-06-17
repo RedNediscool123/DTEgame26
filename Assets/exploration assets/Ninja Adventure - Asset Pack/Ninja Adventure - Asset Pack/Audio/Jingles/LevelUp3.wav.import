@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bb0wbikfq6ur8"
+path="res://.godot/imported/LevelUp3.wav-8c5d3f201cb9829f1595cb2f1bdb5bca.sample"
+
+[deps]
+
+source_file="res://Assets/exploration assets/Ninja Adventure - Asset Pack/Ninja Adventure - Asset Pack/Audio/Jingles/LevelUp3.wav"
+dest_files=["res://.godot/imported/LevelUp3.wav-8c5d3f201cb9829f1595cb2f1bdb5bca.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

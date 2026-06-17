@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bfh1b8tgbqro1"
+path="res://.godot/imported/Spirit.wav-719b6164e7b825e95070d876190aba8f.sample"
+
+[deps]
+
+source_file="res://Assets/exploration assets/Ninja Adventure - Asset Pack/Ninja Adventure - Asset Pack/Audio/Sounds/Magic & Skill/Spirit.wav"
+dest_files=["res://.godot/imported/Spirit.wav-719b6164e7b825e95070d876190aba8f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

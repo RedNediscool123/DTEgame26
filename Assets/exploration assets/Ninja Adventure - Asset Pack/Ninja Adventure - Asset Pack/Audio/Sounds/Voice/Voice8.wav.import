@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://s1lbfkir4hlp"
+path="res://.godot/imported/Voice8.wav-2884a85e2ca06d8a4ce5d1966b9c6ffe.sample"
+
+[deps]
+
+source_file="res://Assets/exploration assets/Ninja Adventure - Asset Pack/Ninja Adventure - Asset Pack/Audio/Sounds/Voice/Voice8.wav"
+dest_files=["res://.godot/imported/Voice8.wav-2884a85e2ca06d8a4ce5d1966b9c6ffe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
