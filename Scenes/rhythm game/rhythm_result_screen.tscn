@@ -53,6 +53,16 @@ offset_bottom = 162.0
 theme_override_fonts/font = ExtResource("3_uw7pe")
 text = "Play again?"
 
+[node name="DoneButton" type="Button" parent="." unique_id=2028389042]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -157.0
+offset_top = -6.0
+offset_right = 149.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("3_uw7pe")
+text = "Done"
+
 [node name="QuitButton" type="Button" parent="." unique_id=1484985968]
 unique_name_in_owner = true
 layout_mode = 0
