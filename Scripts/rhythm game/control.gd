@@ -23,4 +23,4 @@ func _on_quit_pressed():
 func _on_done_pressed():
 	RhythmGameSignals.final_score = 0
 	RhythmGameSignals.best_combo = 0
-	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/text game/main_game.tscn")

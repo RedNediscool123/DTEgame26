@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 [autoload]
 
 RhythmGameSignals="*uid://wslnrmixnqxn"
+GameState="*uid://cf1l1u06b3lcm"
 
 [input]
 

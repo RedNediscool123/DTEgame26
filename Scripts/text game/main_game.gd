@@ -4,15 +4,22 @@ extends Node2D
 @onready var sound_player = $AudioStreamPlayer
 var dialog_index: int = 0
 var dialogue_text: Array = []
+
 func _ready():
 	dialogue_text = load_dialog("res://Assets/Story/story.json")
-	dialog_index = 0
+	
+	# If we're returning from another scene, restore saved index 
+	if GameState.dialog_index > 0:
+		dialog_index = GameState.dialog_index
+		GameState.dialog_index = 0
+	else:
+		dialog_index = 0
+	
 	process_current_line()
 	
 	# connect signals
 	dialogui.choice_selected.connect(_on_choice_selected)
-	
-	
+
 func _input(event):
 	var line = dialogue_text[dialog_index]
 	var has_choices = line.has("choices")
@@ -23,6 +30,7 @@ func _input(event):
 			if dialog_index < len(dialogue_text) - 1:
 				dialog_index += 1
 				process_current_line()
+
 func load_dialog(file_path):
 	if not FileAccess.file_exists(file_path):
 		printerr("File does not exist: ", file_path)
@@ -37,50 +45,41 @@ func load_dialog(file_path):
 		printerr("Failed to parse JSON from file: ", file_path)
 		return []
 	return json_content
+
 func process_current_line():
 	var line_info = dialogue_text[dialog_index]
 	
-	# Check if this is a scene change
 	if line_info.has("scene"):
+		GameState.dialog_index = dialog_index + 1
 		get_tree().change_scene_to_file(line_info["scene"])
 		return
 	
-	# Check if this is a goto command
 	if line_info.has("goto"):
 		dialog_index = get_anchor_position(line_info["goto"])
 		process_current_line()
 		return
 	
-	# Check if this is just an anchor declaration (not displayable content)
 	if line_info.has("anchor"):
 		dialog_index += 1
 		process_current_line()
 		return
-		
-		
+	
 	if line_info.has("choices"):
-		# Display Choices
 		dialogui.display_choices(line_info["choices"])
-		
-		
 	else:
-		# Reading the line of dialogue
 		dialogui.change_line(line_info["speaker"], line_info["text"])
 		character.change_character(line_info["speaker"])
 		if line_info.has("sound"):
 			sound_player.stream = load(line_info["sound"])
 			sound_player.play()
-				
+
 func get_anchor_position(anchor: String):
-	#find the anchor entry with matching name
 	for i in range(dialogue_text.size()):
 		if dialogue_text[i].has("anchor") and dialogue_text[i]["anchor"] == anchor:
 			return i
-	#If we get here, the anchor wasn't found
 	printerr("Error: could not find anchor '" + anchor + "'")
 	return null
-	
-	
+
 func _on_choice_selected(anchor: String):
 	dialog_index = get_anchor_position(anchor)
 	process_current_line()
