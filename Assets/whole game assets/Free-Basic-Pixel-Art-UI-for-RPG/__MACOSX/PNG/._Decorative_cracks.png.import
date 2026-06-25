@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhp3vncb1y2c5"
-path="res://.godot/imported/ArshadowBuff.png-76576ee725c8ad5b0c0df5bb9ff5b737.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://mpffs0g4ex83"
+valid=false
 
 [deps]
 
-source_file="res://Assets/ArshadowBuff.png"
-dest_files=["res://.godot/imported/ArshadowBuff.png-76576ee725c8ad5b0c0df5bb9ff5b737.ctex"]
+source_file="res://Assets/whole game assets/Free-Basic-Pixel-Art-UI-for-RPG/__MACOSX/PNG/._Decorative_cracks.png"
 
 [params]
 

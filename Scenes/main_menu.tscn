@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://c5dsgqeat7q20"]
 
 [ext_resource type="Script" uid="uid://twub40ebccem" path="res://Scripts/main_menu.gd" id="1_28flt"]
-[ext_resource type="Texture2D" uid="uid://d1v7lcs0hpv13" path="res://Assets/Sprites/ChatGPT Image Jun 10, 2026, 06_03_47 PM.png" id="2_48xlc"]
+[ext_resource type="Texture2D" uid="uid://dssx2ll2i62ac" path="res://Assets/whole game assets/Menu/Free_Cozy_Main_Menu_UI_Reference_Pack/01_Main_Menu_Screens/cozy_menu_01_play_screen.png" id="2_48xlc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ehe0"]
 atlas = ExtResource("2_48xlc")
-region = Rect2(0, 0, 1536, 1024)
+region = Rect2(0, 0, 1600, 896)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ce3w2"]
 animations = [{
@@ -13,18 +13,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1ehe0")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
 
 [node name="Main Menu" type="Node2D" unique_id=2012040354]
 script = ExtResource("1_28flt")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=328127]
-position = Vector2(577.5, 319.5)
-scale = Vector2(0.74153644, 0.63378906)
-sprite_frames = SubResource("SpriteFrames_ce3w2")
 
 [node name="Button Manager" type="Control" parent="." unique_id=1220447976]
 layout_mode = 3
@@ -34,11 +29,16 @@ offset_bottom = 40.0
 
 [node name="Start Game" type="Button" parent="Button Manager" unique_id=6467119]
 layout_mode = 0
-offset_left = 721.0
-offset_top = 87.0
-offset_right = 1051.0
-offset_bottom = 165.0
+offset_left = 405.0
+offset_top = 509.0
+offset_right = 735.0
+offset_bottom = 587.0
 text = "Start Game"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button Manager" unique_id=328127]
+position = Vector2(574.5, 324.49997)
+scale = Vector2(0.7193751, 0.72433037)
+sprite_frames = SubResource("SpriteFrames_ce3w2")
 
 [node name="Options" type="Button" parent="Button Manager" unique_id=719930026]
 layout_mode = 0
@@ -48,14 +48,14 @@ offset_right = 1053.0
 offset_bottom = 289.0
 text = "Game Options"
 
-[node name="Quit" type="Button" parent="Button Manager" unique_id=942790848]
+[node name="Quit" type="Button" parent="Button Manager/Options" unique_id=942790848]
 layout_mode = 0
-offset_left = 727.0
-offset_top = 331.0
-offset_right = 1058.0
-offset_bottom = 410.0
+offset_left = 2.0
+offset_top = 115.0
+offset_right = 333.0
+offset_bottom = 194.0
 text = "Quit Game :("
 
 [connection signal="pressed" from="Button Manager/Start Game" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="Button Manager/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button Manager/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button Manager/Options/Quit" to="." method="_on_quit_pressed"]

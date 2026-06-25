@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddbtn5e66bmep"
+path="res://.godot/imported/Minimalist13.ogg-8723b1c13bf4698f0fc155dd88642e49.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/whole game assets/UI Soundpack/UI Soundpack/OGG/Minimalist13.ogg"
+dest_files=["res://.godot/imported/Minimalist13.ogg-8723b1c13bf4698f0fc155dd88642e49.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

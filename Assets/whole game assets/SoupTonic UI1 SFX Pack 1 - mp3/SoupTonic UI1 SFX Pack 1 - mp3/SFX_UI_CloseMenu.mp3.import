@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dt0o6l653q2o7"
+path="res://.godot/imported/SFX_UI_CloseMenu.mp3-90de0896bdf537a727e66ada8cb278cd.mp3str"
+
+[deps]
+
+source_file="res://Assets/whole game assets/SoupTonic UI1 SFX Pack 1 - mp3/SoupTonic UI1 SFX Pack 1 - mp3/SFX_UI_CloseMenu.mp3"
+dest_files=["res://.godot/imported/SFX_UI_CloseMenu.mp3-90de0896bdf537a727e66ada8cb278cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

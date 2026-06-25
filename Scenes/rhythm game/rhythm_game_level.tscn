@@ -7,9 +7,17 @@
 
 [node name="RhythmGameLevel" type="Node2D" unique_id=162667930]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1284721213]
-position = Vector2(-1.0000107, 1.5000103)
-scale = Vector2(0.82310987, 0.57843137)
+[node name="Control" type="Control" parent="." unique_id=128533581]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1284721213]
+position = Vector2(1.0000076, -1.9999924)
+scale = Vector2(1.172254, 0.8674243)
 texture = ExtResource("2_ggbi0")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2041524555]

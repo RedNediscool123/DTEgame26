@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hql5g376nlsw"
+path="res://.godot/imported/SFX_UI_Equip.mp3-9b7598ee8bd9c3de460d4f10097e08bc.mp3str"
+
+[deps]
+
+source_file="res://Assets/whole game assets/SoupTonic UI1 SFX Pack 1 - mp3/SoupTonic UI1 SFX Pack 1 - mp3/SFX_UI_Equip.mp3"
+dest_files=["res://.godot/imported/SFX_UI_Equip.mp3-9b7598ee8bd9c3de460d4f10097e08bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

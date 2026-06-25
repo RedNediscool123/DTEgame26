@@ -1,0 +1,54 @@
+Free Cozy Main Menu UI Reference Pack
+License
+
+This license applies to all PNG files included in this free pack.
+
+ALLOWED USE
+
+You may use the files for:
+
+- personal projects
+- commercial projects
+- game prototypes
+- UI mockups
+- moodboards
+- visual references
+- presentations
+- concept exploration
+- learning and practice
+- inspiration for your own original UI designs
+
+You may use this pack as a reference for games, visual novels, mobile games, PC games, game jams, and indie projects.
+
+NOT ALLOWED
+
+You may not:
+
+- resell these files as your own asset pack
+- redistribute the original files
+- upload the pack to other marketplaces
+- include the original PNG files in another free or paid asset collection
+- claim authorship of the original images
+- sell the images as standalone artwork
+- use the files to train datasets, AI models, or asset-generation systems
+- mint or sell the files as NFTs
+
+COMMERCIAL USE
+
+Commercial use is allowed for reference, prototyping, mockups, and inspiration.
+
+This pack is non-exclusive. Other users may also download and use the same files.
+
+ATTRIBUTION
+
+Credit is appreciated but not required.
+
+Suggested credit:
+UI reference pack by NexaVisuals
+
+NO WARRANTY
+
+This pack is provided as-is.
+The creator is not responsible for how the files are used in individual projects.
+
+Thank you for respecting the license.
