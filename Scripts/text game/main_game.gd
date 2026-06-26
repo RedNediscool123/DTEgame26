@@ -6,6 +6,7 @@ var dialog_index: int = 0
 var dialogue_text: Array = []
 
 func _ready():
+	%AudioStreamPlayer2D.play()
 	dialogue_text = load_dialog("res://Assets/Story/story.json")
 	
 	# If we're returning from another scene, restore saved index 

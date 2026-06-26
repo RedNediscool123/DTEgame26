@@ -3,7 +3,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	preload("res://Assets/sound_effects/nintendo-game-boy-startup.mp3")
+	preload("res://Assets/sound_effects/the-family-feud-buzzer-sound-effect.mp3")
+	%AudioStreamPlayer2D.play()
 
 
 

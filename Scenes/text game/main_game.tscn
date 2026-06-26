@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bnfdp2262ubxu" path="res://Assets/Sprites/ChatGPT Image Jun 4, 2026, 09_35_56 AM.png" id="2_54vwl"]
 [ext_resource type="PackedScene" uid="uid://cy57xrmmbu5fo" path="res://Scenes/text game/character.tscn" id="3_ahdn3"]
 [ext_resource type="PackedScene" uid="uid://dhlnw37mnti48" path="res://Scenes/text game/dialog_ui.tscn" id="4_vwxo3"]
+[ext_resource type="AudioStream" uid="uid://bx4v2ylwn75od" path="res://Assets/music/bg-music.mp3" id="5_p8830"]
 
 [node name="Maingame" type="Node2D" unique_id=1246861989]
 script = ExtResource("1_jx03c")
@@ -44,3 +45,8 @@ unique_name_in_owner = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1119617718]
 volume_db = -26.732
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1459243916]
+unique_name_in_owner = true
+stream = ExtResource("5_p8830")
+parameters/looping = true

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b3uub7bl2dmpd" path="res://Scripts/rhythm game/control.gd" id="1_pvvu2"]
 [ext_resource type="Texture2D" uid="uid://ccrweo5qnjmmg" path="res://Assets/Rhythm game assets/Rythm game sprites/Rhythm score scene.png" id="2_vkdir"]
 [ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="3_uw7pe"]
+[ext_resource type="AudioStream" uid="uid://g0xc2i0yg1dx" path="res://Assets/music/win-song.mp3" id="4_vkdir"]
 
 [node name="RhythmResultScreen" type="Control" unique_id=2124009191]
 layout_mode = 3
@@ -73,3 +74,7 @@ offset_bottom = 268.0
 theme_override_fonts/font = ExtResource("3_uw7pe")
 text = "Quit
 (Back to title screen)"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1405368651]
+unique_name_in_owner = true
+stream = ExtResource("4_vkdir")

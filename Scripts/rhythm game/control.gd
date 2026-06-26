@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	%AudioStreamPlayer2D.play()
 	$ScoreLabel.text = "Score: " + str(RhythmGameSignals.final_score) + " pts"
 	$BestComboLabel.text = "Best Combo: " + str(RhythmGameSignals.best_combo) + "x"
 	

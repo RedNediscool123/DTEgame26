@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://twub40ebccem" path="res://Scripts/main_menu.gd" id="1_28flt"]
 [ext_resource type="Texture2D" uid="uid://dssx2ll2i62ac" path="res://Assets/whole game assets/Menu/Free_Cozy_Main_Menu_UI_Reference_Pack/01_Main_Menu_Screens/cozy_menu_01_play_screen.png" id="2_48xlc"]
+[ext_resource type="AudioStream" uid="uid://3ghdde70ks37" path="res://Assets/music/menu-music.mp3" id="3_1ehe0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ehe0"]
 atlas = ExtResource("2_48xlc")
@@ -28,17 +29,13 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Start Game" type="Button" parent="Button Manager" unique_id=6467119]
+z_index = -1
 layout_mode = 0
 offset_left = 405.0
 offset_top = 509.0
 offset_right = 735.0
 offset_bottom = 587.0
 text = "Start Game"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button Manager" unique_id=328127]
-position = Vector2(574.5, 324.49997)
-scale = Vector2(0.7193751, 0.72433037)
-sprite_frames = SubResource("SpriteFrames_ce3w2")
 
 [node name="Options" type="Button" parent="Button Manager" unique_id=719930026]
 layout_mode = 0
@@ -55,6 +52,25 @@ offset_top = 115.0
 offset_right = 333.0
 offset_bottom = 194.0
 text = "Quit Game :("
+
+[node name="Control" type="Control" parent="Button Manager" unique_id=503090462]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button Manager/Control" unique_id=328127]
+z_index = -1
+position = Vector2(574.5, 324.49997)
+scale = Vector2(0.7193751, 0.72433037)
+sprite_frames = SubResource("SpriteFrames_ce3w2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1099173166]
+unique_name_in_owner = true
+stream = ExtResource("3_1ehe0")
+parameters/looping = true
 
 [connection signal="pressed" from="Button Manager/Start Game" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="Button Manager/Options" to="." method="_on_options_pressed"]
