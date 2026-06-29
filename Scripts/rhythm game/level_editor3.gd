@@ -1,5 +1,7 @@
 extends Node2D
- 
+#level_editor3 
+
+
 const in_edit_mode: bool = false
 var current_level_name = "Baby_Shark"
  
@@ -21,7 +23,8 @@ var level_info = {
 
 
 ",
-		"music": load("res://Assets/Rhythm game assets/rhythm game songs/BabyShark.mp3")
+		"music": load("res://Assets/Rhythm game assets/rhythm game songs/BabyShark.mp3"),
+		"background": load("res://Assets/whole game assets/Kitchen Interior Backgrounds/kitchen interior background 3.png")
 	}
 }
  
@@ -30,8 +33,8 @@ var level_info = {
  
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	$AudioStreamPlayer2D.stream = level_info.get(current_level_name).get("music")
+	%Sprite2D.texture = level_info.get(current_level_name).get("background")
+	$"../Control/AudioStreamPlayer2D".stream = level_info.get(current_level_name).get("music")
 	
 	if in_edit_mode:
 		RhythmGameSignals.KeyListenerPress.connect(KeyListenerPress)

@@ -16,6 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1284721213]
+unique_name_in_owner = true
 position = Vector2(1.0000076, -1.9999924)
 scale = Vector2(1.172254, 0.8674243)
 texture = ExtResource("1_oqj5n")
