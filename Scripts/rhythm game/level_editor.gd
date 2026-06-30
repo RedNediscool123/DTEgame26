@@ -26,8 +26,8 @@ var level_info = {
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	%Sprite2D.texture = level_info.get(current_level_name).get("background")
-	$"../Control/AudioStreamPlayer2D".stream = level_info.get(current_level_name).get("music")
-	$"../Control/AudioStreamPlayer2D".play()
+	$AudioStreamPlayer2D.stream = level_info.get(current_level_name).get("music")
+	$AudioStreamPlayer2D.play()
 	
 	if in_edit_mode:
 		RhythmGameSignals.KeyListenerPress.connect(KeyListenerPress)

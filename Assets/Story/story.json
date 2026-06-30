@@ -37,7 +37,7 @@
 		
 		
 		{"anchor": "explore" },
-		{"scene": "res://Scenes/rhythm game/Subsuming_Vortex.tscn"},
+		{"scene": "res://Scenes/rhythm game/rhythm_game_level_sub.tscn"},
 		{"speaker": "Lizard", "text": "Wow! that must've been hard!"}, 
 		{ "goto": "goodjob" },
 		
