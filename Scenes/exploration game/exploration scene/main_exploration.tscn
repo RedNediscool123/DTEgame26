@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dxnxefalowem1"]
+
+[ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="1_bib64"]
+[ext_resource type="Script" uid="uid://dp1uhb7x0fg7t" path="res://Scripts/exploration game/main_exploration.gd" id="1_jg33l"]
+[ext_resource type="Script" uid="uid://d0r74dggpljxb" path="res://Scripts/exploration game/door1.gd" id="1_jlhe6"]
+[ext_resource type="PackedScene" uid="uid://j76ddpnjymhd" path="res://Scenes/exploration game/exploration scene/exploration levels/base_level.tscn" id="2_8j4dh"]
+[ext_resource type="PackedScene" uid="uid://cve6kwnhk3spx" path="res://Scenes/exploration game/exploration scene/exploration buildings/house.tscn" id="3_ifg1p"]
+[ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="4_gdk0w"]
+[ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="7_iupy2"]
+
+[node name="main_exploration" type="Node2D" unique_id=1792272098]
+script = ExtResource("1_jg33l")
+
+[node name="Door" parent="." unique_id=1077052658 instance=ExtResource("4_gdk0w")]
+position = Vector2(559, 32.999996)
+rotation = 1.5707964
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_jlhe6")
+
+[node name="LevelRoot" parent="." unique_id=802563911 instance=ExtResource("2_8j4dh")]
+
+[node name="House" parent="." unique_id=3201096 instance=ExtResource("3_ifg1p")]
+position = Vector2(577, -48)
+
+[node name="Player" parent="." unique_id=1321761079 instance=ExtResource("1_bib64")]
+position = Vector2(564, 305)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1850569914]
+unique_name_in_owner = true
+stream = ExtResource("7_iupy2")
+volume_db = -4.269

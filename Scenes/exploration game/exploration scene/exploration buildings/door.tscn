@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d1xmhdlb8pk0o"]
+
+[ext_resource type="Texture2D" uid="uid://cgt6qc7d1ocgj" path="res://Assets/exploration assets/ChatGPT_Image_Jul_19__2026__04_28_48_PM-removebg-preview.png" id="1_ppln0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(106, 240)
+
+[node name="Door" type="Area2D" unique_id=1077052658]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1434167883]
+position = Vector2(-6, -9)
+texture = ExtResource("1_ppln0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=195020551]
+position = Vector2(2, 11)
+shape = SubResource("RectangleShape2D_g4v7s")
