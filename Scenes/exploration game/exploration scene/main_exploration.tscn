@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://cve6kwnhk3spx" path="res://Scenes/exploration game/exploration scene/exploration buildings/house.tscn" id="3_ifg1p"]
 [ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="4_gdk0w"]
 [ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="7_iupy2"]
+[ext_resource type="Script" uid="uid://dfob36aot6yor" path="res://Scripts/exploration game/grief_door.gd" id="8_iupy2"]
+[ext_resource type="Texture2D" uid="uid://dd64xuhohpylo" path="res://Assets/exploration assets/sign.png" id="9_vasti"]
 
 [node name="main_exploration" type="Node2D" unique_id=1792272098]
 script = ExtResource("1_jg33l")
@@ -29,3 +31,14 @@ position = Vector2(564, 305)
 unique_name_in_owner = true
 stream = ExtResource("7_iupy2")
 volume_db = -4.269
+
+[node name="Door2" parent="." unique_id=1235123588 instance=ExtResource("4_gdk0w")]
+position = Vector2(1058, 545)
+scale = Vector2(0.3, 0.3)
+script = ExtResource("8_iupy2")
+
+[node name="Sign" type="Sprite2D" parent="." unique_id=1173908022]
+position = Vector2(1062.9999, 539)
+rotation = 4.712389
+scale = Vector2(0.12982479, 0.12594035)
+texture = ExtResource("9_vasti")

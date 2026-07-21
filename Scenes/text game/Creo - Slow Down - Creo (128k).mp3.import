@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4t1fgvdy7213"
+path="res://.godot/imported/Creo - Slow Down - Creo (128k).mp3-f4dd0046bf059cf406afb28aebdf29c0.mp3str"
+
+[deps]
+
+source_file="res://Scenes/text game/Creo - Slow Down - Creo (128k).mp3"
+dest_files=["res://.godot/imported/Creo - Slow Down - Creo (128k).mp3-f4dd0046bf059cf406afb28aebdf29c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -11,14 +11,14 @@
 		},
 		
 		{ "anchor": "first_choice" },
-		{"speaker": "Rocky", "text": "Character change!", "sound": "res://Assets/sound_effects/nintendo-game-boy-startup.mp3"},
+		{"speaker": "Chips", "text": "Character change!", "sound": "res://Assets/sound_effects/nintendo-game-boy-startup.mp3"},
 		{ "goto": "yogurt" },
 		
 		
 		
 		
 		{ "anchor": "second_choice" },
-		{"speaker": "Jelly", "text": "Character change", "sound": "res://Assets/sound_effects/the-family-feud-buzzer-sound-effect.mp3"},
+		{"speaker": "Takeaways", "text": "Character change", "sound": "res://Assets/sound_effects/the-family-feud-buzzer-sound-effect.mp3"},
 		{ "goto": "yogurt" },
 		
 		
@@ -32,17 +32,4 @@
 		},
 		{"anchor": "rhythm" },
 		{"scene": "res://Scenes/rhythm game/rhythm_game_level.tscn"},
-		{"speaker": "Lizard", "text": "Wow! that must've been hard!"}, 
-		{ "goto": "goodjob" },
-		
-		
-		{"anchor": "explore" },
-		{"scene": "res://Scenes/rhythm game/rhythm_game_level_sub.tscn"},
-		{"speaker": "Lizard", "text": "Wow! that must've been hard!"}, 
-		{ "goto": "goodjob" },
-		
-		
-		
-		{"anchor": "goodjob" },
-		{"speaker": "Lizard", "text": "Wow! now let's get to the task at hand!"}, 
-]
+		{"speaker": "Lizard", "text": "Wow! that

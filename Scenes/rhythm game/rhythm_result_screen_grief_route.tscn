@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://cx27ao43xcqp1"]
+[gd_scene format=3 uid="uid://cpkmt33ftagf8"]
 
-[ext_resource type="Script" uid="uid://b054vhlcu7ln2" path="res://Scenes/rhythm game/rhythm_result_screen.gd" id="1_vkdir"]
-[ext_resource type="Texture2D" uid="uid://ccrweo5qnjmmg" path="res://Assets/Rhythm game assets/Rythm game sprites/Rhythm score scene.png" id="2_vkdir"]
-[ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="3_uw7pe"]
-[ext_resource type="AudioStream" uid="uid://g0xc2i0yg1dx" path="res://Assets/music/win-song.mp3" id="4_vkdir"]
+[ext_resource type="Script" uid="uid://428ve5l3c4vh" path="res://Scripts/rhythm game/rhythm_result_screen_grief_route.gd" id="1_w2rvp"]
+[ext_resource type="Texture2D" uid="uid://ccrweo5qnjmmg" path="res://Assets/Rhythm game assets/Rythm game sprites/Rhythm score scene.png" id="2_ua7uh"]
+[ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="3_ehf7a"]
+[ext_resource type="AudioStream" uid="uid://g0xc2i0yg1dx" path="res://Assets/music/win-song.mp3" id="4_3jdrh"]
 
 [node name="RhythmResultScreen" type="Control" unique_id=2124009191]
 layout_mode = 3
@@ -12,12 +12,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_vkdir")
+script = ExtResource("1_w2rvp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1129165487]
 position = Vector2(-0.5, 1.4999924)
 scale = Vector2(0.8223966, 0.5748663)
-texture = ExtResource("2_vkdir")
+texture = ExtResource("2_ua7uh")
 
 [node name="ScoreLabel" type="Label" parent="." unique_id=1969312770]
 unique_name_in_owner = true
@@ -27,7 +27,7 @@ offset_top = -201.0
 offset_right = -234.0
 offset_bottom = -78.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_uw7pe")
+theme_override_fonts/font = ExtResource("3_ehf7a")
 text = "jo1967
 "
 
@@ -39,7 +39,7 @@ offset_top = 21.0
 offset_right = -250.0
 offset_bottom = 190.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_uw7pe")
+theme_override_fonts/font = ExtResource("3_ehf7a")
 text = "jo"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1064604431]
@@ -51,7 +51,7 @@ offset_left = -153.0
 offset_top = 95.0
 offset_right = 153.0
 offset_bottom = 162.0
-theme_override_fonts/font = ExtResource("3_uw7pe")
+theme_override_fonts/font = ExtResource("3_ehf7a")
 text = "Play again?"
 
 [node name="DoneButton" type="Button" parent="." unique_id=2028389042]
@@ -61,7 +61,7 @@ offset_left = -157.0
 offset_top = -6.0
 offset_right = 149.0
 offset_bottom = 61.0
-theme_override_fonts/font = ExtResource("3_uw7pe")
+theme_override_fonts/font = ExtResource("3_ehf7a")
 text = "Done"
 
 [node name="QuitButton" type="Button" parent="." unique_id=1484985968]
@@ -71,10 +71,10 @@ offset_left = -154.0
 offset_top = 201.0
 offset_right = 152.0
 offset_bottom = 268.0
-theme_override_fonts/font = ExtResource("3_uw7pe")
+theme_override_fonts/font = ExtResource("3_ehf7a")
 text = "Quit
 (Back to title screen)"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1405368651]
 unique_name_in_owner = true
-stream = ExtResource("4_vkdir")
+stream = ExtResource("4_3jdrh")
