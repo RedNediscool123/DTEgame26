@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cpkmt33ftagf8"]
 
 [ext_resource type="Script" uid="uid://428ve5l3c4vh" path="res://Scripts/rhythm game/rhythm_result_screen_grief_route.gd" id="1_w2rvp"]
-[ext_resource type="Texture2D" uid="uid://ccrweo5qnjmmg" path="res://Assets/Rhythm game assets/Rythm game sprites/Rhythm score scene.png" id="2_ua7uh"]
+[ext_resource type="Texture2D" uid="uid://dhb75xkjby034" path="res://Assets/whole game assets/96zkvL8NNQEeKrixuATU8i.jpg" id="2_w2rvp"]
 [ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="3_ehf7a"]
 [ext_resource type="AudioStream" uid="uid://g0xc2i0yg1dx" path="res://Assets/music/win-song.mp3" id="4_3jdrh"]
 
@@ -15,9 +15,9 @@ grow_vertical = 2
 script = ExtResource("1_w2rvp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1129165487]
-position = Vector2(-0.5, 1.4999924)
-scale = Vector2(0.8223966, 0.5748663)
-texture = ExtResource("2_ua7uh")
+position = Vector2(-0.49999237, -1.000032)
+scale = Vector2(0.59947914, 0.59814805)
+texture = ExtResource("2_w2rvp")
 
 [node name="ScoreLabel" type="Label" parent="." unique_id=1969312770]
 unique_name_in_owner = true

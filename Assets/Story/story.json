@@ -1,35 +1,29 @@
 [
-	{"speaker": "Lizard", "text": "!!!!!!!!!!!"},
-	{"speaker": "Lizard", "text": "Hello there! I'm here! over here, I'm just a bit small"},
-	{"speaker": "Lizard", "text": "Hello, nice to finally meet you, press enter or space, or just click to continue"},
-	
+	{"speaker": "Lizard", "text": "...okay hold on. Who are you."},
+	{"speaker": "Lizard", "text": "I've got a lock on the door AND a chair under the handle. That's a whole system."},
+	{"speaker": "Lizard", "text": "So how'd you get in? Chimney? Vent? Did you just... walk through the wall?"},
+	{"speaker": "Lizard", "text": "Explain yourself. Enter, space, click, whatever, just answer me."},
 	{ "choices":
 		[
-			{ "text": "first choice!", "goto": "first_choice" },
-			{ "text": "second choice!", "goto": "second_choice" },
+			{ "text": "I just went through the door", "goto": "through_door" },
+			{ "text": "Beats me", "goto": "beats_me" }
 		]
-		},
-		
-		{ "anchor": "first_choice" },
-		{"speaker": "Chips", "text": "Character change!", "sound": "res://Assets/sound_effects/nintendo-game-boy-startup.mp3"},
-		{ "goto": "yogurt" },
-		
-		
-		
-		
-		{ "anchor": "second_choice" },
-		{"speaker": "Takeaways", "text": "Character change", "sound": "res://Assets/sound_effects/the-family-feud-buzzer-sound-effect.mp3"},
-		{ "goto": "yogurt" },
-		
-		
-		{"anchor": "yogurt" },
-		{"speaker": "Lizard", "text": "Which rhythm game do you want to play?(exploration mode coming soon)"},
-		{ "choices":
-		[
-			{ "text": "Defeated Circles(easier)", "goto": "rhythm" },
-			{ "text": "(hella buggy)Subsuming Vortext(extremely harder)", "goto": "explore" },
-		]
-		},
-		{"anchor": "rhythm" },
-		{"scene": "res://Scenes/rhythm game/rhythm_game_level.tscn"},
-		{"speaker": "Lizard", "text": "Wow! that
+	},
+	{ "anchor": "through_door" },
+	{"speaker": "You", "text": "I just went through the door."},
+	{"speaker": "Lizard", "text": "Through the door. THE DOOR. Do you understand what I built here?"},
+	{"speaker": "Lizard", "text": "Triple-reinforced deadbolt. A chair. A CHAIR, wedged at the precise angle for maximum resistance."},
+	{"speaker": "Lizard", "text": "I calculated the angle. I have a diagram. It's on the fridge."},
+	{"speaker": "Lizard", "text": "And you just... turned the handle. Unbelievable. My defenses were supposed to be impeccable."},
+	{ "goto": "after_entry" },
+	{ "anchor": "beats_me" },
+	{"speaker": "You", "text": "Beats me."},
+	{"speaker": "Lizard", "text": "Well that's not very helpful, is it?"},
+	{ "goto": "after_entry" },
+	{ "anchor": "after_entry" },
+	{"speaker": "Lizard", "text": "Well no matter, I need to ask you something."},
+	{"speaker": "Lizard", "text": "My friend Chips has gone missing. She usually turns up by now, without fail."},
+	{"speaker": "Lizard", "text": "Last I saw her, she was heading out back, muttering something about a noise she'd heard."},
+	{"speaker": "Lizard", "text": "That was two days ago. Nothing since. No note, no sign, nothing."},
+	{"speaker": "Lizard", "text": "I need you to go find her. Please."}
+]

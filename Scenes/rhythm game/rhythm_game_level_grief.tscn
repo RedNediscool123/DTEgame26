@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d3bhb1f1riwmb"]
 
-[ext_resource type="Texture2D" uid="uid://ys2tirtvw1a6" path="res://Assets/whole game assets/Kitchen Interior Backgrounds/kitchen interior background 3.png" id="1_vge87"]
+[ext_resource type="Texture2D" uid="uid://5kp0utp0m6wt" path="res://Assets/whole game assets/download (3).jpg" id="1_vge87"]
 [ext_resource type="PackedScene" uid="uid://c0g6b7cxpjfm1" path="res://Scenes/rhythm game/key_listener.tscn" id="2_epxuc"]
 [ext_resource type="PackedScene" uid="uid://bi8lq8c3v1jaq" path="res://Assets/Rhythm game assets/Rhythm game objects/rhythm_game_ui.tscn" id="3_bv8gr"]
 [ext_resource type="PackedScene" uid="uid://bm5y2wqsmigu3" path="res://Scenes/rhythm game/level_editor.tscn" id="4_yna53"]
@@ -18,8 +18,8 @@ grow_vertical = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1284721213]
 unique_name_in_owner = true
-position = Vector2(1.0000076, -1.9999924)
-scale = Vector2(1.172254, 0.8674243)
+position = Vector2(-2.5000062, -4.529953e-06)
+scale = Vector2(1.8131869, 1.8212291)
 texture = ExtResource("1_vge87")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2041524555]

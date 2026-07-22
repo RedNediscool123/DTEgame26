@@ -33,12 +33,12 @@ stream = ExtResource("7_iupy2")
 volume_db = -4.269
 
 [node name="Door2" parent="." unique_id=1235123588 instance=ExtResource("4_gdk0w")]
-position = Vector2(1058, 545)
-scale = Vector2(0.3, 0.3)
+position = Vector2(1137.3002, 624.91)
+scale = Vector2(0.03, 0.03)
 script = ExtResource("8_iupy2")
 
 [node name="Sign" type="Sprite2D" parent="." unique_id=1173908022]
-position = Vector2(1062.9999, 539)
+position = Vector2(1137.3, 627.91)
 rotation = 4.712389
-scale = Vector2(0.12982479, 0.12594035)
+scale = Vector2(0.03, 0.03)
 texture = ExtResource("9_vasti")

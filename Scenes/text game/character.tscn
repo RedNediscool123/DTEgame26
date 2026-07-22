@@ -111,5 +111,5 @@ script = ExtResource("1_38w1r")
 position = Vector2(0, -1)
 scale = Vector2(2.9775312, 2.9490356)
 sprite_frames = SubResource("SpriteFrames_ejxs3")
-animation = &"Takeaways"
+animation = &"Chips"
 autoplay = "Lizard"

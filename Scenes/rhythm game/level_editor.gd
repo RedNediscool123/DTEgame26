@@ -25,7 +25,7 @@ var level_info = {
 
 ",
 		"music": load("res://Assets/Rhythm game assets/rhythm game songs/Grief.mp3"),
-		"background": load("res://Assets/whole game assets/Kitchen Interior Backgrounds/kitchen interior background 3.png")
+		"background": load("res://Assets/whole game assets/download (3).jpg")
 	}
 }
  
