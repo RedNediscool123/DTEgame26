@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bqpy2i4hqgya6"]
+
+[ext_resource type="Script" uid="uid://h0tuytslvrdm" path="res://Scenes/rhythm game/rhythm_result_screen_society.gd" id="1_3iuga"]
+[ext_resource type="Texture2D" uid="uid://ccrweo5qnjmmg" path="res://Assets/Rhythm game assets/Rythm game sprites/Rhythm score scene.png" id="2_7omty"]
+[ext_resource type="FontFile" uid="uid://cvfcrdbir7bah" path="res://Assets/Rhythm game assets/Rhythm game objects/bubbled/Bubbled.ttf" id="3_7cqoy"]
+[ext_resource type="AudioStream" uid="uid://g0xc2i0yg1dx" path="res://Assets/music/win-song.mp3" id="4_w4riw"]
+
+[node name="RhythmResultScreen" type="Control" unique_id=2124009191]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3iuga")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1129165487]
+position = Vector2(-0.5, 1.4999924)
+scale = Vector2(0.8223966, 0.5748663)
+texture = ExtResource("2_7omty")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1969312770]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -495.0
+offset_top = -201.0
+offset_right = -234.0
+offset_bottom = -78.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7cqoy")
+text = "jo1967
+"
+
+[node name="BestComboLabel" type="Label" parent="." unique_id=442439961]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -493.0
+offset_top = 21.0
+offset_right = -250.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7cqoy")
+text = "jo"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1064604431]
+
+[node name="PlayAgainButton" type="Button" parent="." unique_id=245459004]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -153.0
+offset_top = 95.0
+offset_right = 153.0
+offset_bottom = 162.0
+theme_override_fonts/font = ExtResource("3_7cqoy")
+text = "Play again?"
+
+[node name="DoneButton" type="Button" parent="." unique_id=2028389042]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -157.0
+offset_top = -6.0
+offset_right = 149.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("3_7cqoy")
+text = "Done"
+
+[node name="QuitButton" type="Button" parent="." unique_id=1484985968]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -154.0
+offset_top = 201.0
+offset_right = 152.0
+offset_bottom = 268.0
+theme_override_fonts/font = ExtResource("3_7cqoy")
+text = "Quit
+(Back to title screen)"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1405368651]
+unique_name_in_owner = true
+stream = ExtResource("4_w4riw")

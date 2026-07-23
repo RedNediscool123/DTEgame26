@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c0g6b7cxpjfm1" path="res://Scenes/rhythm game/key_listener.tscn" id="2_yanm3"]
 [ext_resource type="PackedScene" uid="uid://bi8lq8c3v1jaq" path="res://Assets/Rhythm game assets/Rhythm game objects/rhythm_game_ui.tscn" id="3_i3jf5"]
 [ext_resource type="PackedScene" uid="uid://bm5y2wqsmigu3" path="res://Scenes/rhythm game/level_editor.tscn" id="4_urhqy"]
-[ext_resource type="Script" uid="uid://cbk1x2ojvvh65" path="res://Scripts/rhythm game/level_editor4.gd" id="5_24i7k"]
+[ext_resource type="Script" uid="uid://dhtxagkfm7kf8" path="res://Scripts/rhythm game/level_editor_society.gd" id="5_24i7k"]
 
 [node name="RhythmGameLevel" type="Node2D" unique_id=162667930]
 
