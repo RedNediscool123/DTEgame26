@@ -74,5 +74,18 @@
 	{"speaker": "Lizard", "text": "Are you two alright? That was... a lot."},
 	{"speaker": "Chips", "text": "I'm okay. That was terrifying, but I'm okay."},
 	{"speaker": "Lizard", "text": "I don't know what that thing wants, but I don't like it."},
-	{"speaker": "Lizard", "text": "Whatever it's planning, we're not letting it happen. Not to this house, not to anyone."}
+	{"speaker": "Lizard", "text": "Whatever it's planning, we're not letting it happen. Not to this house, not to anyone."},
+	{"speaker": "Lizard", "text": "Hey, since that whole ordeal, I'm starving. Could you go find something we can cook?"},
+	{"speaker": "Lizard", "text": "Just bring back whatever you can find, I'm not picky at this point."},
+	{ "choices":
+		[
+			{ "text": "Of course", "goto": "accept_food_quest" }
+		]
+	},
+	{ "anchor": "accept_food_quest" },
+	{"speaker": "You", "text": "Of course"},
+	{"speaker": "Lizard", "text": "Great, thank you. I'll get the stove ready."},
+	{"scene": "res://Scenes/exploration game/exploration scene/exploration levels/food_find.tscn"},
+	{ "anchor": "food_found" },
+	{"speaker": "You", "text": "Found something — hope this works."}
 ]

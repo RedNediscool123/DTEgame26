@@ -1,30 +1,30 @@
-[gd_scene format=4 uid="uid://8e6qb87fpr70"]
+[gd_scene format=4 uid="uid://dxepkgjtli641"]
 
-[ext_resource type="Texture2D" uid="uid://cqjh45io6m55w" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="1_frmhn"]
-[ext_resource type="Texture2D" uid="uid://d08e3fyk4u0ek" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="2_yf4hl"]
-[ext_resource type="Texture2D" uid="uid://bp33ojib2y8i7" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 1 - DAY.png" id="3_sq2i3"]
-[ext_resource type="Texture2D" uid="uid://cb12n0wp568jh" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 2 - DAY.png" id="4_sjp87"]
-[ext_resource type="Texture2D" uid="uid://blxlrb5esowwe" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png" id="5_1jbxo"]
-[ext_resource type="Texture2D" uid="uid://kqol1npqj0b6" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png" id="6_v0ex4"]
-[ext_resource type="Texture2D" uid="uid://bs66psp21a2x8" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/TERRAIN SET 1 - DAY.png" id="7_oxmja"]
-[ext_resource type="Texture2D" uid="uid://ctgm5fpkc0oe8" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/TERRAIN SET 5 - DAY.png" id="8_eqo7o"]
-[ext_resource type="Texture2D" uid="uid://pe6hecofk4ru" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/GRASS TILE - DAY.png" id="9_4oaip"]
-[ext_resource type="Texture2D" uid="uid://rho287cp0j37" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/GROUND TILE - DAY.png" id="10_pygtf"]
-[ext_resource type="Texture2D" uid="uid://bqqme310mtrk3" path="res://Assets/exploration assets/tileset.png" id="11_giqx0"]
-[ext_resource type="Texture2D" uid="uid://yypwwp8yor6j" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/FarmLand_Tile.png" id="12_p7irm"]
-[ext_resource type="Texture2D" uid="uid://ukimoatwe6fg" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Grass_Middle.png" id="13_ty02p"]
-[ext_resource type="Texture2D" uid="uid://deu3gmwv2soyk" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Path_Middle.png" id="14_skijh"]
-[ext_resource type="Texture2D" uid="uid://d3xlngvgb8su8" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Path_Tile.png" id="15_faocg"]
-[ext_resource type="Texture2D" uid="uid://ox0xk3q1s245" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Water_Middle.png" id="16_yidrw"]
-[ext_resource type="Texture2D" uid="uid://dw6cqhwqg7do2" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Water_Tile.png" id="17_es1v2"]
-[ext_resource type="Texture2D" uid="uid://565x37n43fim" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png" id="18_d8vyp"]
-[ext_resource type="Texture2D" uid="uid://bkl4jhubbdk3g" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png" id="19_eydk1"]
-[ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="20_sq2i3"]
-[ext_resource type="Script" uid="uid://5yb1w6pjotfk" path="res://Scripts/exploration game/door_chips.gd" id="21_sjp87"]
-[ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="22_sjp87"]
+[ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="1_accew"]
+[ext_resource type="Script" uid="uid://5yb1w6pjotfk" path="res://Scripts/exploration game/door_chips.gd" id="2_7yocd"]
+[ext_resource type="Texture2D" uid="uid://cqjh45io6m55w" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="3_jc7e6"]
+[ext_resource type="Texture2D" uid="uid://d08e3fyk4u0ek" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="4_du55x"]
+[ext_resource type="Texture2D" uid="uid://bp33ojib2y8i7" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 1 - DAY.png" id="5_2qso6"]
+[ext_resource type="Texture2D" uid="uid://cb12n0wp568jh" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 2 - DAY.png" id="6_n5vf4"]
+[ext_resource type="Texture2D" uid="uid://blxlrb5esowwe" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png" id="7_yog85"]
+[ext_resource type="Texture2D" uid="uid://kqol1npqj0b6" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png" id="8_erwdt"]
+[ext_resource type="Texture2D" uid="uid://bs66psp21a2x8" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/TERRAIN SET 1 - DAY.png" id="9_pt3eq"]
+[ext_resource type="Texture2D" uid="uid://ctgm5fpkc0oe8" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/TERRAIN SET 5 - DAY.png" id="10_w1xmt"]
+[ext_resource type="Texture2D" uid="uid://pe6hecofk4ru" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/GRASS TILE - DAY.png" id="11_mphkv"]
+[ext_resource type="Texture2D" uid="uid://rho287cp0j37" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/GROUND TILE - DAY.png" id="12_sbsxc"]
+[ext_resource type="Texture2D" uid="uid://bqqme310mtrk3" path="res://Assets/exploration assets/tileset.png" id="13_hcknn"]
+[ext_resource type="Texture2D" uid="uid://yypwwp8yor6j" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/FarmLand_Tile.png" id="14_itndo"]
+[ext_resource type="Texture2D" uid="uid://ukimoatwe6fg" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Grass_Middle.png" id="15_q8m87"]
+[ext_resource type="Texture2D" uid="uid://deu3gmwv2soyk" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Path_Middle.png" id="16_07edj"]
+[ext_resource type="Texture2D" uid="uid://d3xlngvgb8su8" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Path_Tile.png" id="17_q34sm"]
+[ext_resource type="Texture2D" uid="uid://ox0xk3q1s245" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Water_Middle.png" id="18_3w050"]
+[ext_resource type="Texture2D" uid="uid://dw6cqhwqg7do2" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Water_Tile.png" id="19_8ab3d"]
+[ext_resource type="Texture2D" uid="uid://565x37n43fim" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png" id="20_5mw73"]
+[ext_resource type="Texture2D" uid="uid://bkl4jhubbdk3g" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png" id="21_ixbth"]
+[ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="22_6t0nl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
-texture = ExtResource("1_frmhn")
+texture = ExtResource("3_jc7e6")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -40,7 +40,7 @@ texture = ExtResource("1_frmhn")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6f4s6"]
-texture = ExtResource("2_yf4hl")
+texture = ExtResource("4_du55x")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -59,19 +59,19 @@ texture = ExtResource("2_yf4hl")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qjt0l"]
-texture = ExtResource("3_sq2i3")
+texture = ExtResource("5_2qso6")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sopr3"]
-texture = ExtResource("4_sjp87")
+texture = ExtResource("6_n5vf4")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ooobq"]
-texture = ExtResource("5_1jbxo")
+texture = ExtResource("7_yog85")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ogd2c"]
-texture = ExtResource("6_v0ex4")
+texture = ExtResource("8_erwdt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -108,7 +108,7 @@ texture = ExtResource("6_v0ex4")
 4:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2diru"]
-texture = ExtResource("7_oxmja")
+texture = ExtResource("9_pt3eq")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -120,7 +120,7 @@ texture = ExtResource("7_oxmja")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_583in"]
-texture = ExtResource("8_eqo7o")
+texture = ExtResource("10_w1xmt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -132,15 +132,15 @@ texture = ExtResource("8_eqo7o")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_20xma"]
-texture = ExtResource("9_4oaip")
+texture = ExtResource("11_mphkv")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ddjr"]
-texture = ExtResource("10_pygtf")
+texture = ExtResource("12_sbsxc")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ylasq"]
-texture = ExtResource("11_giqx0")
+texture = ExtResource("13_hcknn")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -198,7 +198,7 @@ texture = ExtResource("11_giqx0")
 9:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vb7y0"]
-texture = ExtResource("12_p7irm")
+texture = ExtResource("14_itndo")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -210,15 +210,15 @@ texture = ExtResource("12_p7irm")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vetwc"]
-texture = ExtResource("13_ty02p")
+texture = ExtResource("15_q8m87")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_so0ic"]
-texture = ExtResource("14_skijh")
+texture = ExtResource("16_07edj")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dfbf"]
-texture = ExtResource("15_faocg")
+texture = ExtResource("17_q34sm")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -237,11 +237,11 @@ texture = ExtResource("15_faocg")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_61a4v"]
-texture = ExtResource("16_yidrw")
+texture = ExtResource("18_3w050")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w02ly"]
-texture = ExtResource("17_es1v2")
+texture = ExtResource("19_8ab3d")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -260,7 +260,7 @@ texture = ExtResource("17_es1v2")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gb1hk"]
-texture = ExtResource("18_d8vyp")
+texture = ExtResource("20_5mw73")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -281,7 +281,7 @@ texture = ExtResource("18_d8vyp")
 5:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xybdd"]
-texture = ExtResource("19_eydk1")
+texture = ExtResource("21_ixbth")
 3:0/0 = 0
 4:0/0 = 0
 2:1/0 = 0
@@ -352,11 +352,11 @@ sources/18 = SubResource("TileSetAtlasSource_ylasq")
 
 [node name="LevelRoot" type="Node2D" unique_id=802563911]
 
-[node name="Door_chips" parent="." unique_id=1077052658 instance=ExtResource("20_sq2i3")]
+[node name="Door_chips" parent="." unique_id=1077052658 instance=ExtResource("1_accew")]
 position = Vector2(992, 411.00006)
 rotation = 1.5707964
 scale = Vector2(0.2, 0.2)
-script = ExtResource("21_sjp87")
+script = ExtResource("2_7yocd")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2113119087]
 scale = Vector2(4, 4)
@@ -368,5 +368,5 @@ scale = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAACAAAADwAAAAAAAAADAAEADwABAAEAAAAEAAEADwACAAEAAAAFAAEAEAAAAAAAAAAGAAEAEAAAAAAAAAAHAAEAEAAAAAAAAAAIAAEADAAAAAAAAAAJAAEAEAAAAAAAAAAKAAIADgAAAAIAAAALAAIADgABAAIAAAAMAAIADgACAAIAAAAMAAMAEAAAAAAAAAALAAMAEAAAAAAAAAAKAAMAEAAAAAAAAAAJAAMAEAAAAAAAAAAIAAMAEAAAAAAAAAAHAAMAEAAAAAAAAAAGAAMAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEAEAAAAAAAAAAAAAIAEAAAAAAAAAAAAAMAEAAAAAAAAAAAAAQAEAAAAAAAAAAAAAUAEAAAAAAAAAAAAAYAEAAAAAAAAAAAAAcAEAAAAAAAAAAAAAgAEAAAAAAAAAAAAAkAEAAAAAAAAAABAAAAEAAAAAAAAAABAAEADAAAAAAAAAABAAIAEAAAAAAAAAABAAMAEAAAAAAAAAABAAQAEAAAAAAAAAABAAUAEAAAAAAAAAABAAYADgAAAAAAAAABAAcADgAAAAEAAAABAAgADgAAAAIAAAABAAkAEAAAAAAAAAACAAEADwAAAAEAAAACAAIADwAAAAIAAAACAAMAEAAAAAAAAAACAAQAEAAAAAAAAAACAAUAEAAAAAAAAAACAAYADgABAAAAAAACAAgADgABAAIAAAACAAkAEAAAAAAAAAADAAAADwABAAAAAAADAAIADwABAAIAAAADAAMAEAAAAAAAAAADAAQAEAAAAAAAAAADAAUAEAAAAAAAAAADAAYADgACAAAAAAADAAcADgACAAEAAAADAAgADgACAAIAAAADAAkAEAAAAAAAAAAEAAAADwACAAAAAAAEAAIADwACAAIAAAAEAAMAEAAAAAAAAAAEAAQAEAAAAAAAAAAEAAUAEAAAAAAAAAAEAAYAEAAAAAAAAAAEAAcAEAAAAAAAAAAEAAgAEAAAAAAAAAAEAAkAEAAAAAAAAAAFAAAAEAAAAAAAAAAFAAIAEAAAAAAAAAAFAAMADAAAAAAAAAAFAAQAEAAAAAAAAAAFAAUADAAAAAAAAAAFAAYAEAAAAAAAAAAFAAcADAAAAAAAAAAFAAgADAAAAAAAAAAFAAkAEAAAAAAAAAAGAAAAEAAAAAAAAAAGAAIAEAAAAAAAAAAGAAQAEAAAAAAAAAAGAAUAEAAAAAAAAAAGAAYAEAAAAAAAAAAGAAcADAAAAAAAAAAGAAgAEAAAAAAAAAAGAAkAEAAAAAAAAAAHAAIAEAAAAAAAAAAHAAQAEAAAAAAAAAAHAAUAEAAAAAAAAAAHAAYAEAAAAAAAAAAHAAcAEAAAAAAAAAAHAAgAEAAAAAAAAAAHAAkAEAAAAAAAAAAIAAIAEAAAAAAAAAAIAAQAEAAAAAAAAAAIAAUAEAAAAAAAAAAIAAYAEAAAAAAAAAAIAAcAEAAAAAAAAAAIAAgADAAAAAAAAAAIAAkAEAAAAAAAAAAJAAIAEAAAAAAAAAAJAAQAEAAAAAAAAAAJAAYAEAAAAAAAAAAJAAcAEAAAAAAAAAAJAAgAEAAAAAAAAAAJAAkAEAAAAAAAAAAKAAAADgAAAAAAAAAKAAEADgAAAAEAAAAKAAQAEAAAAAAAAAAKAAUAEAAAAAAAAAAKAAYAEAAAAAAAAAAKAAcAEAAAAAAAAAAKAAgAEAAAAAAAAAAKAAkAEAAAAAAAAAALAAAADgABAAAAAAALAAEADgABAAEAAAALAAQAEAAAAAAAAAALAAUAEAAAAAAAAAALAAYAEAAAAAAAAAALAAcAEAAAAAAAAAALAAgAEAAAAAAAAAALAAkAEAAAAAAAAAAMAAAADgACAAAAAAAMAAEADgACAAEAAAAMAAQAEAAAAAAAAAAMAAUAEAAAAAAAAAAMAAYAEAAAAAAAAAAMAAcAEAAAAAAAAAAMAAgAEAAAAAAAAAAMAAkAEAAAAAAAAAANAAAAEAAAAAAAAAANAAEAEAAAAAAAAAANAAIAEAAAAAAAAAANAAMADAAAAAAAAAANAAQAEAAAAAAAAAANAAUAEAAAAAAAAAANAAYAEAAAAAAAAAANAAcAEAAAAAAAAAANAAgADAAAAAAAAAANAAkAEAAAAAAAAAAOAAAAEAAAAAAAAAAOAAEAEAAAAAAAAAAOAAIAEAAAAAAAAAAOAAMAEAAAAAAAAAAOAAQAEAAAAAAAAAAOAAUADwAAAAAAAAAOAAYADwAAAAEAAAAOAAcADwAAAAIAAAAOAAgAEAAAAAAAAAAOAAkAEAAAAAAAAAAPAAAABQACAAUAAAAPAAEABAAAAAAAAAAPAAIAEAAAAAAAAAAPAAMAEAAAAAAAAAAPAAQAEAAAAAAAAAAPAAUADwABAAAAAAAPAAYADwABAAEAAAAPAAcADwABAAIAAAAPAAgAEAAAAAAAAAAPAAkABgAAAAAAAAAQAAAABQABAAEAAAAQAAEABQABAAUAAAAQAAIABAAAAAAAAAAQAAMABAAAAAAAAAAQAAQAEAAAAAAAAAAQAAUADwACAAAAAAAQAAYADwACAAEAAAAQAAcADwACAAIAAAAQAAgAEAAAAAAAAAARAAAABQAAAAQAAAARAAEABQAAAAMAAAARAAIABQAAAAQAAAARAAMABAAAAAAAAAARAAQABQAAAAUAAAARAAUAEAAAAAAAAAARAAkABgAAAAAAAAARAAgABgAAAAAAAAARAAcABgAAAAAAAAARAAYAEAAAAAAAAAAQAAkABgAAAAAAAAAJAAUADAAAAAAAAAAJAP3/DQADAAAAAAAKAP7/DQAEAAEAAAAJAAAAEAAAAAAAAAAIAAAAEAAAAAAAAAAHAAAAEAAAAAAAAAACAAcADgABAAEAAAAIAP7/EAAAAAAAAAAIAP//EAAAAAAAAAAJAP7/EAAAAAAAAAAJAP//EAAAAAAAAAA=")
 tile_set = SubResource("TileSet_g4v7s")
 
-[node name="Player" parent="." unique_id=1321761079 instance=ExtResource("22_sjp87")]
+[node name="Player" parent="." unique_id=1321761079 instance=ExtResource("22_6t0nl")]
 position = Vector2(104, 567)
