@@ -8,7 +8,7 @@ func _ready():
 	$QuitButton.pressed.connect(_on_quit_pressed)
 	%DoneButton.pressed.connect(_on_done_pressed)
 	
-	%DoneButton.visible = RhythmGameSignals.final_score > 50000
+	%DoneButton.visible = RhythmGameSignals.final_score > 35000
 func _on_play_again_pressed():
 	RhythmGameSignals.final_score = 0
 	RhythmGameSignals.best_combo = 0
@@ -20,5 +20,5 @@ func _on_quit_pressed():
 func _on_done_pressed():
 	RhythmGameSignals.final_score = 0
 	RhythmGameSignals.best_combo = 0
-	GameState.dialog_anchor = "prep_done"
+	GameState.dialog_anchor = "meal_cooked"
 	get_tree().change_scene_to_file("res://Scenes/text game/main_game.tscn")
