@@ -37,20 +37,12 @@ offset_right = 735.0
 offset_bottom = 587.0
 text = "Start Game"
 
-[node name="Options" type="Button" parent="Button Manager" unique_id=719930026]
+[node name="Quit" type="Button" parent="Button Manager/Start Game" unique_id=942790848]
+z_index = 1
 layout_mode = 0
-offset_left = 725.0
-offset_top = 216.0
-offset_right = 1053.0
-offset_bottom = 289.0
-text = "Game Options"
-
-[node name="Quit" type="Button" parent="Button Manager/Options" unique_id=942790848]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 115.0
-offset_right = 333.0
-offset_bottom = 194.0
+offset_top = -178.0
+offset_right = 331.0
+offset_bottom = -99.0
 text = "Quit Game :("
 
 [node name="Control" type="Control" parent="Button Manager" unique_id=503090462]
@@ -73,5 +65,4 @@ stream = ExtResource("3_1ehe0")
 parameters/looping = true
 
 [connection signal="pressed" from="Button Manager/Start Game" to="." method="_on_start_game_pressed"]
-[connection signal="pressed" from="Button Manager/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button Manager/Options/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button Manager/Start Game/Quit" to="." method="_on_quit_pressed"]
