@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d1gbm4ddor2bv"]
+
+[ext_resource type="Script" uid="uid://cvw0wxg4r4i5s" path="res://Scripts/win_screen.gd" id="1_a00f1"]
+[ext_resource type="Texture2D" uid="uid://d1otvw6dwnv6v" path="res://Assets/whole game assets/Untitled.jpg" id="1_l5sol"]
+
+[node name="Win_Screen" type="Node2D" unique_id=1297324692]
+script = ExtResource("1_a00f1")
+
+[node name="Control" type="Control" parent="." unique_id=831232747]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=2119456915]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_l5sol")
+
+[node name="Restart" type="Button" parent="Control/TextureRect" unique_id=1619265226]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 262.0
+offset_right = 714.0
+offset_bottom = 344.0
+text = "Restart"
+
+[node name="Quit" type="Button" parent="Control/TextureRect" unique_id=1220490723]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 485.0
+offset_right = 720.0
+offset_bottom = 567.0
+text = "Quit"
+
+[connection signal="pressed" from="Control/TextureRect/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Control/TextureRect/Quit" to="." method="_on_quit_pressed"]

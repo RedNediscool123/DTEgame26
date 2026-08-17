@@ -65,7 +65,7 @@
 	{"speaker": "Lizard", "text": "That smells incredible. Thanks for everything, mysterious stranger."},
 	{"speaker": "Chips", "text": "Best meal I've had in ages. Worth getting lost for."},
 	{"speaker": "Lizard", "text": "Thanks for everything today, couldn't have done it without you."},
-	{"speaker": "Lizard", "text": "The End (No end screen yet)."},
+	{"scene": "res://Scenes/win_screen.tscn"},
 	{"speaker": "Lizard", "text": "The End (No end screen yet)."},
 	{"speaker": "Lizard", "text": "The End (No end screen yet)."},
 	{"speaker": "Lizard", "text": "The End (No end screen yet)."},
