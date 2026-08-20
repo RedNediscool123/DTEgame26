@@ -8,12 +8,12 @@ func _ready():
 	$QuitButton.pressed.connect(_on_quit_pressed)
 	%DoneButton.pressed.connect(_on_done_pressed)
 	
-	%DoneButton.visible = RhythmGameSignals.final_score > 75000
+	%DoneButton.visible = RhythmGameSignals.final_score > 105000
 
 func _on_play_again_pressed():
 	RhythmGameSignals.final_score = 0
 	RhythmGameSignals.best_combo = 0
-	get_tree().change_scene_to_file("res://Scenes/rhythm game/rhythm_game_level_grief.tscn")
+	get_tree().change_scene_to_file("res://Scenes/rhythm game/rhythm_game_level_shade.tscn")
 func _on_quit_pressed():
 	RhythmGameSignals.final_score = 0
 	RhythmGameSignals.best_combo = 0

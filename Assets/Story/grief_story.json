@@ -7,5 +7,18 @@
 	{"speaker": "Grief", "text": "You can find out if you are worthy..."},
 	{"speaker": "Grief", "text": "This is grief..."},
 	{"scene": "res://Scenes/rhythm game/rhythm_game_level_grief.tscn"},
-	 
+	{ "anchor": "grief_trial_done" },
+	{"speaker": "Grief", "text": "Impressive..."},
+	{"speaker": "Grief", "text": "You passed the first trial..."},
+	{"speaker": "Grief", "text": "But there are more to come..."},
+	{"scene": "res://Scenes/rhythm game/rhythm_game_level_grief.tscn"},
+	{ "anchor": "grief_trial_done2" },
+	{"speaker": "Grief", "text": "Impossible..."},
+	{"speaker": "Grief", "text": "But no matter..."},
+	{"speaker": "Grief", "text": "No on has ever passed the final trial"},
+	{"scene": "res://Scenes/rhythm game/rhythm_game_level_grief.tscn"},2222222222222222222222222222222222222
+	{ "anchor": "grief_trial_donefinale" },
+	{"speaker": "Grief", "text": "Impossible..."},
+	{"speaker": "Grief", "text": "You..."},
+	{"speaker": "Grief", "text": "Fool..."},
 ]
