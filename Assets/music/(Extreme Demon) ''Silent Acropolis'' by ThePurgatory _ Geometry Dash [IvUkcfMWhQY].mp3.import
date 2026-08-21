@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfif3ejfw5bu4"
+path="res://.godot/imported/(Extreme Demon) ''Silent Acropolis'' by ThePurgatory _ Geometry Dash [IvUkcfMWhQY].mp3-09062f01e6e2ce7eb8fc4ced6e4e4a1a.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/(Extreme Demon) ''Silent Acropolis'' by ThePurgatory _ Geometry Dash [IvUkcfMWhQY].mp3"
+dest_files=["res://.godot/imported/(Extreme Demon) ''Silent Acropolis'' by ThePurgatory _ Geometry Dash [IvUkcfMWhQY].mp3-09062f01e6e2ce7eb8fc4ced6e4e4a1a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

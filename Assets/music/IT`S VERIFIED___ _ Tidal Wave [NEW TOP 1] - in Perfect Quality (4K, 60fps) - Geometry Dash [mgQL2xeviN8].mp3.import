@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlcaaxa3wpl5a"
+path="res://.godot/imported/IT`S VERIFIED___ _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash [mgQL2xeviN8].mp3-92d81b5f1f7095b81c2efdbc67946660.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/IT`S VERIFIED___ _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash [mgQL2xeviN8].mp3"
+dest_files=["res://.godot/imported/IT`S VERIFIED___ _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash [mgQL2xeviN8].mp3-92d81b5f1f7095b81c2efdbc67946660.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
