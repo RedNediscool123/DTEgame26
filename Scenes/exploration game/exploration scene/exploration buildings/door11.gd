@@ -6,7 +6,7 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		call_deferred("change_scene", "res://Scenes/exploration game/exploration scene/exploration levels/sub1.tscn")
+		call_deferred("change_scene", "res://Scenes/exploration game/exploration scene/exploration levels/sub2.tscn")
 
 func change_scene(path: String) -> void:
 	get_tree().change_scene_to_file(path)
