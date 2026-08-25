@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://crrlpa1fqbodf"]
 
+[ext_resource type="Script" uid="uid://cl65aumby6e6h" path="res://Scripts/exploration game/sub_1.gd" id="1_jhdje"]
 [ext_resource type="Texture2D" uid="uid://cqjh45io6m55w" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="1_mjbw8"]
 [ext_resource type="Texture2D" uid="uid://d08e3fyk4u0ek" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="2_4ins6"]
 [ext_resource type="Texture2D" uid="uid://bp33ojib2y8i7" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 1 - DAY.png" id="3_sxton"]
@@ -25,6 +26,8 @@
 [ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="23_kkeu5"]
 [ext_resource type="Script" uid="uid://dfob36aot6yor" path="res://Scripts/exploration game/grief_door.gd" id="24_gri8u"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="25_kkeu5"]
+[ext_resource type="AudioStream" uid="uid://dmx4nv5wqur3i" path="res://Assets/music/Ashley Wave Trials by OddMod _ Geometry Dash [KrdMngKSLKc].mp3" id="26_gri8u"]
+[ext_resource type="Script" uid="uid://1heol464rvl6" path="res://Scenes/exploration game/exploration scene/exploration buildings/final_door.gd" id="26_qa5l4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_mjbw8")
@@ -862,6 +865,7 @@ sources/19 = SubResource("TileSetAtlasSource_n2fwv")
 sources/20 = SubResource("TileSetAtlasSource_mue3k")
 
 [node name="LevelRoot" type="Node2D" unique_id=802563911]
+script = ExtResource("1_jhdje")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2113119087]
 scale = Vector2(4, 4)
@@ -879,9 +883,19 @@ scale = Vector2(0.122474946, 0.09166668)
 texture = ExtResource("22_vdwb0")
 
 [node name="Door2" parent="." unique_id=1077052658 instance=ExtResource("23_kkeu5")]
-position = Vector2(609, 368.00003)
+position = Vector2(-67.99988, 139.00002)
 scale = Vector2(0.03, 0.03)
 script = ExtResource("24_gri8u")
 
+[node name="Door3" parent="." unique_id=902246576 instance=ExtResource("23_kkeu5")]
+position = Vector2(609.99994, 364)
+scale = Vector2(0.03, 0.03)
+script = ExtResource("26_qa5l4")
+
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("25_kkeu5")]
 position = Vector2(63, 561)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=486664261]
+unique_name_in_owner = true
+stream = ExtResource("26_gri8u")
+volume_db = -3.888

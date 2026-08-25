@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmx4nv5wqur3i"
+path="res://.godot/imported/Ashley Wave Trials by OddMod _ Geometry Dash [KrdMngKSLKc].mp3-757faf31d4d163c107f5da61ad4d33e9.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/Ashley Wave Trials by OddMod _ Geometry Dash [KrdMngKSLKc].mp3"
+dest_files=["res://.godot/imported/Ashley Wave Trials by OddMod _ Geometry Dash [KrdMngKSLKc].mp3-757faf31d4d163c107f5da61ad4d33e9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

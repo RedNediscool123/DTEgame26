@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cupaejeixlagg"]
 
 [ext_resource type="Texture2D" uid="uid://cqjh45io6m55w" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="1_f1oyf"]
+[ext_resource type="Script" uid="uid://cl65aumby6e6h" path="res://Scripts/exploration game/sub_1.gd" id="1_rbre2"]
 [ext_resource type="Texture2D" uid="uid://d08e3fyk4u0ek" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="2_0gm4m"]
 [ext_resource type="Texture2D" uid="uid://bp33ojib2y8i7" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 1 - DAY.png" id="3_8hpns"]
 [ext_resource type="Texture2D" uid="uid://cb12n0wp568jh" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 2 - DAY.png" id="4_sg5vb"]
@@ -24,6 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="22_8hpns"]
 [ext_resource type="Script" uid="uid://ck71y38nwvuvd" path="res://Scenes/exploration game/exploration scene/exploration buildings/door4.gd" id="23_8hpns"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="24_sg5vb"]
+[ext_resource type="AudioStream" uid="uid://dmx4nv5wqur3i" path="res://Assets/music/Ashley Wave Trials by OddMod _ Geometry Dash [KrdMngKSLKc].mp3" id="25_hjcsu"]
+[ext_resource type="Script" uid="uid://68a2ligyeba5" path="res://Scenes/exploration game/exploration scene/exploration buildings/door33.gd" id="27_vpk5y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_f1oyf")
@@ -861,6 +864,7 @@ sources/19 = SubResource("TileSetAtlasSource_n2fwv")
 sources/20 = SubResource("TileSetAtlasSource_mue3k")
 
 [node name="LevelRoot" type="Node2D" unique_id=802563911]
+script = ExtResource("1_rbre2")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2113119087]
 scale = Vector2(4, 4)
@@ -869,7 +873,7 @@ tile_set = SubResource("TileSet_g4v7s")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1039488812]
 scale = Vector2(4, 4)
-tile_map_data = PackedByteArray("AAACAAAAEwAMAA4AAAAEAAEAEwAMAA4AAAAFAAEAEwAMAA4AAAAGAAEAEwAMAA4AAAAHAAEAEwAMAA4AAAAIAAEAEwAMAA4AAAAJAAEAEwAMAA4AAAAKAAIAEwAMAA4AAAALAAIAEwAMAA4AAAAMAAIAEwAHAAkAAAAMAAMAEwAHAAkAAAALAAMAEwAHAAkAAAAKAAMAEwAMAA4AAAAJAAMAEwAMAA4AAAAIAAMAEwAMAA4AAAAHAAMAEwAMAA4AAAAGAAMAEwAMAA4AAAAAAAEAEwAMAA4AAAAAAAIAEwAMAA4AAAAAAAMAEwAMAA4AAAAAAAQAEwAMAA4AAAAAAAUAEwAMAA4AAAAAAAYAEwAMAA4AAAAAAAcAEwAMAA4AAAAAAAgAEwAMAA4AAAAAAAkAEwAMAA4AAAABAAEAEwAMAA4AAAABAAIAEwAMAA4AAAABAAMAEwAMAA4AAAABAAQAEwAMAA4AAAABAAUAEwAMAA4AAAABAAYAEwAMAA4AAAABAAcAEwAMAA4AAAABAAgAEwAMAA4AAAABAAkAEwAMAA4AAAACAAIAEwAMAA4AAAACAAMAEwAMAA4AAAACAAQAEwAMAA4AAAACAAUAEwAMAA4AAAACAAYAEwAMAA4AAAACAAcAEwAMAA4AAAACAAgAEwAMAA4AAAACAAkAEwAMAA4AAAADAAAAEwAMAA4AAAADAAMAEwAMAA4AAAADAAQAEwAMAA4AAAADAAUAEwAMAA4AAAADAAYAEwAMAA4AAAADAAcAEwAMAA4AAAADAAgAEwAMAA4AAAADAAkAEwAMAA4AAAAEAAAAEwAMAA4AAAAEAAIAEwAMAA4AAAAEAAMAEwAMAA4AAAAEAAQAEwAMAA4AAAAEAAUAEwAMAA4AAAAEAAYAEwAMAA4AAAAEAAcAEwAMAA4AAAAEAAgAEwAMAA4AAAAEAAkAEwAMAA4AAAAFAAAAEwAMAA4AAAAFAAIAEwAMAA4AAAAFAAMAEwAMAA4AAAAFAAQAEwAMAA4AAAAFAAUAEwAMAA4AAAAFAAYAEwAMAA4AAAAFAAcAEwAMAA4AAAAFAAgAEwAMAA4AAAAFAAkAEwAMAA4AAAAGAAAAEwAMAA4AAAAGAAIAEwAMAA4AAAAGAAQAEwAMAA4AAAAGAAUAEwAMAA4AAAAGAAYAEwAMAA4AAAAGAAcAEwAMAA4AAAAGAAgAEwAMAA4AAAAGAAkAEwAMAA4AAAAHAAIAEwAMAA4AAAAHAAQAEwAMAA4AAAAHAAUAEwAMAA4AAAAHAAYAEwAMAA4AAAAHAAcAEwAMAA4AAAAHAAgAEwAMAA4AAAAHAAkAEwAHAAkAAAAIAAIAEwAMAA4AAAAIAAQAEwAMAA4AAAAIAAUAEwAMAA4AAAAIAAYAEwAMAA4AAAAIAAcAEwAHAAkAAAAIAAgAEwAHAAkAAAAIAAkAEwAHAAkAAAAJAAIAEwAMAA4AAAAJAAQAEwAHAAkAAAAJAAYAEwAHAAkAAAAJAAgAEwAHAAkAAAAJAAkAEwAHAAkAAAAKAAAAEwAMAA4AAAAKAAEAEwAMAA4AAAAKAAQAEwAHAAkAAAAKAAUAEwAHAAkAAAAKAAYAEwAHAAkAAAAKAAcAEwAHAAkAAAAKAAgAEwAHAAkAAAAKAAkAEwAHAAkAAAALAAAAEwAMAA4AAAALAAEAEwAMAA4AAAALAAQAEwAHAAkAAAALAAUAEwAHAAkAAAALAAYAEwAHAAkAAAALAAcAEwAHAAkAAAALAAgAEwAHAAkAAAALAAkAEwAHAAkAAAAMAAAAEwAMAA4AAAAMAAEAEwAHAAkAAAAMAAQAEwAHAAkAAAAMAAUAEwAHAAkAAAAMAAYAEwAHAAkAAAAMAAcAEwAHAAkAAAAMAAgAEwAHAAkAAAAMAAkAEwAHAAkAAAANAAAAEwAHAAkAAAANAAEAEwAHAAkAAAANAAIAEwAHAAkAAAANAAMAEwAHAAkAAAANAAQAEwAHAAkAAAANAAUAEwAHAAkAAAANAAYAEwAHAAkAAAANAAcAEwAHAAkAAAANAAgAEwAHAAkAAAANAAkAEwAHAAkAAAAOAAAAEwAHAAkAAAAOAAEAEwAHAAkAAAAOAAIAEwAHAAkAAAAOAAMAEwAHAAkAAAAOAAQAEwAHAAkAAAAOAAUAEwAHAAkAAAAOAAYAEwAHAAkAAAAOAAcAEwAHAAkAAAAOAAgAEwAHAAkAAAAOAAkAEwAHAAkAAAAPAAAAEwAHAAkAAAAPAAEAEwAHAAkAAAAPAAIAEwAHAAkAAAAPAAMAEwAHAAkAAAAPAAQAEwAHAAkAAAAPAAUAEwAHAAkAAAAPAAYAEwAHAAkAAAAPAAcAEwAHAAkAAAAPAAgAEwAHAAkAAAAPAAkAEwAHAAkAAAAQAAAAEwAHAAkAAAAQAAEAEwAHAAkAAAAQAAIAEwAHAAkAAAAQAAMAEwAHAAkAAAAQAAQAEwAHAAkAAAAQAAUAEwAHAAkAAAAQAAYAEwAHAAkAAAAQAAcAEwAHAAkAAAAQAAgAEwAHAAkAAAARAAAAEwAHAAkAAAARAAEAEwAHAAkAAAARAAIAEwAHAAkAAAARAAMAEwAHAAkAAAARAAQAEwAHAAkAAAARAAUAEwAHAAkAAAARAAkAEwAHAAkAAAARAAgAEwAHAAkAAAARAAcAEwAHAAkAAAARAAYAEwAHAAkAAAAQAAkAEwAHAAkAAAAJAAUAEwAHAAkAAAAJAAAAEwAMAA4AAAAIAAAAEwAMAA4AAAAHAAAAEwAMAA4AAAAJAAcAEwAHAAkAAAAAAAAAEwAMAA4AAAABAAAAEwAMAA4AAAACAAEAEwAMAA4AAAADAAEAEwAMAA4AAAADAAIAEwAMAA4AAAA=")
+tile_map_data = PackedByteArray("AAACAAAAEwAMAA4AAAAEAAEAEwABAAYAAAAFAAEAEwAMAA4AAAAGAAEAEwAMAA4AAAAHAAEAEwAMAA4AAAAIAAEAEwAMAA4AAAAJAAEAEwAMAA4AAAAKAAIAEwABAAYAAAALAAIAEwAMAA4AAAAMAAIAEwAHAAkAAAAMAAMAEwAHAAkAAAALAAMAEwAHAAkAAAAKAAMAEwABAAYAAAAJAAMAEwAMAA4AAAAIAAMAEwAMAA4AAAAHAAMAEwABAAYAAAAGAAMAEwAMAA4AAAAAAAEAEwAMAA4AAAAAAAIAEwAMAA4AAAAAAAMAEwAMAA4AAAAAAAQAEwAMAA4AAAAAAAUAEwAMAA4AAAAAAAYAEwAMAA4AAAAAAAcAEwAMAA4AAAAAAAgAEwAMAA4AAAAAAAkAEwAMAA4AAAABAAEAEwABAAYAAAABAAIAEwABAAYAAAABAAMAEwABAAYAAAABAAQAEwAMAA4AAAABAAUAEwAMAA4AAAABAAYAEwABAAYAAAABAAcAEwABAAYAAAABAAgAEwABAAYAAAABAAkAEwABAAYAAAACAAIAEwAMAA4AAAACAAMAEwAMAA4AAAACAAQAEwAMAA4AAAACAAUAEwAMAA4AAAACAAYAEwAMAA4AAAACAAcAEwAMAA4AAAACAAgAEwAMAA4AAAACAAkAEwAMAA4AAAADAAAAEwAMAA4AAAADAAMAEwAMAA4AAAADAAQAEwAMAA4AAAADAAUAEwAMAA4AAAADAAYAEwAMAA4AAAADAAcAEwAMAA4AAAADAAgAEwABAAYAAAADAAkAEwABAAYAAAAEAAAAEwABAAYAAAAEAAIAEwABAAYAAAAEAAMAEwABAAYAAAAEAAQAEwABAAYAAAAEAAUAEwABAAYAAAAEAAYAEwAMAA4AAAAEAAcAEwAMAA4AAAAEAAgAEwAMAA4AAAAEAAkAEwAMAA4AAAAFAAAAEwAMAA4AAAAFAAIAEwAMAA4AAAAFAAMAEwAMAA4AAAAFAAQAEwAMAA4AAAAFAAUAEwAMAA4AAAAFAAYAEwAMAA4AAAAFAAcAEwAMAA4AAAAFAAgAEwAMAA4AAAAFAAkAEwAMAA4AAAAGAAAAEwAMAA4AAAAGAAIAEwAMAA4AAAAGAAQAEwAMAA4AAAAGAAUAEwAMAA4AAAAGAAYAEwAMAA4AAAAGAAcAEwAMAA4AAAAGAAgAEwAMAA4AAAAGAAkAEwAMAA4AAAAHAAIAEwABAAYAAAAHAAQAEwABAAYAAAAHAAUAEwABAAYAAAAHAAYAEwABAAYAAAAHAAcAEwABAAYAAAAHAAgAEwABAAYAAAAHAAkAEwABAAYAAAAIAAIAEwAMAA4AAAAIAAQAEwAMAA4AAAAIAAUAEwAMAA4AAAAIAAYAEwAMAA4AAAAIAAcAEwAHAAkAAAAIAAgAEwAHAAkAAAAIAAkAEwAHAAkAAAAJAAIAEwAMAA4AAAAJAAQAEwAHAAkAAAAJAAYAEwAHAAkAAAAJAAgAEwAHAAkAAAAJAAkAEwAHAAkAAAAKAAAAEwABAAYAAAAKAAEAEwABAAYAAAAKAAQAEwABAAYAAAAKAAUAEwAHAAkAAAAKAAYAEwAHAAkAAAAKAAcAEwAHAAkAAAAKAAgAEwABAAYAAAAKAAkAEwAHAAkAAAALAAAAEwAMAA4AAAALAAEAEwAMAA4AAAALAAQAEwAHAAkAAAALAAUAEwABAAYAAAALAAcAEwAHAAkAAAALAAgAEwAHAAkAAAALAAkAEwAHAAkAAAAMAAAAEwABAAYAAAAMAAEAEwABAAYAAAAMAAQAEwAHAAkAAAAMAAUAEwAHAAkAAAAMAAYAEwAHAAkAAAAMAAcAEwAHAAkAAAAMAAgAEwAHAAkAAAAMAAkAEwAHAAkAAAANAAAAEwAHAAkAAAANAAEAEwAHAAkAAAANAAIAEwAHAAkAAAANAAMAEwAHAAkAAAANAAQAEwAHAAkAAAANAAUAEwAHAAkAAAANAAYAEwAHAAkAAAANAAcAEwABAAYAAAANAAgAEwABAAYAAAANAAkAEwAHAAkAAAAOAAAAEwABAAYAAAAOAAEAEwABAAYAAAAOAAIAEwABAAYAAAAOAAMAEwABAAYAAAAOAAQAEwAHAAkAAAAOAAUAEwAHAAkAAAAOAAYAEwAHAAkAAAAOAAcAEwAHAAkAAAAOAAgAEwABAAYAAAAOAAkAEwABAAYAAAAPAAAAEwAHAAkAAAAPAAEAEwAHAAkAAAAPAAIAEwAHAAkAAAAPAAMAEwABAAYAAAAPAAQAEwABAAYAAAAPAAUAEwABAAYAAAAPAAYAEwAHAAkAAAAPAAcAEwAHAAkAAAAPAAgAEwAHAAkAAAAPAAkAEwAHAAkAAAAQAAAAEwAHAAkAAAAQAAEAEwAHAAkAAAAQAAIAEwAHAAkAAAAQAAMAEwAHAAkAAAAQAAQAEwAHAAkAAAAQAAUAEwAHAAkAAAAQAAYAEwAHAAkAAAAQAAcAEwAHAAkAAAAQAAgAEwAHAAkAAAARAAAAEwAHAAkAAAARAAEAEwAHAAkAAAARAAIAEwAHAAkAAAARAAMAEwAHAAkAAAARAAQAEwAHAAkAAAARAAUAEwAHAAkAAAARAAkAEwAHAAkAAAARAAgAEwAHAAkAAAARAAcAEwAHAAkAAAARAAYAEwAHAAkAAAAQAAkAEwAHAAkAAAAJAAUAEwAHAAkAAAAJAAAAEwAMAA4AAAAIAAAAEwAMAA4AAAAHAAAAEwAMAA4AAAAJAAcAEwAHAAkAAAAAAAAAEwAMAA4AAAABAAAAEwABAAYAAAACAAEAEwAMAA4AAAADAAEAEwAMAA4AAAADAAIAEwAMAA4AAAALAAYAEwABAAYAAAA=")
 tile_set = SubResource("TileSet_g4v7s")
 
 [node name="Door5" parent="." unique_id=1077052658 instance=ExtResource("22_8hpns")]
@@ -880,3 +884,272 @@ script = ExtResource("23_8hpns")
 
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("24_sg5vb")]
 position = Vector2(26, 35)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=833818571]
+unique_name_in_owner = true
+stream = ExtResource("25_hjcsu")
+volume_db = -3.888
+
+[node name="Door32" parent="." unique_id=197841545 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95.00001, 33)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door33" parent="." unique_id=195823566 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(97, 100.99999)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door34" parent="." unique_id=1471818946 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95.00001, 172)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door35" parent="." unique_id=679226717 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95, 220)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door36" parent="." unique_id=1373976283 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95, 416)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door37" parent="." unique_id=1507704792 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95.00001, 488.00003)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door38" parent="." unique_id=864255758 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95, 559.9999)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door39" parent="." unique_id=1003707815 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(95.00001, 601.99994)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door40" parent="." unique_id=1606256410 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(222, 601.99994)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door41" parent="." unique_id=807989052 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(222, 544.9999)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door42" parent="." unique_id=1131002635 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(287, 346)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door43" parent="." unique_id=214651937 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(287, 277)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door44" parent="." unique_id=1286346169 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(287, 208.00005)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door45" parent="." unique_id=299189921 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(287.00003, 138.00005)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door46" parent="." unique_id=524376552 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(287, 68.000046)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door47" parent="." unique_id=1354535431 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(287.00003, 33.000053)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door48" parent="." unique_id=2057349832 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(479, 160.00003)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door49" parent="." unique_id=140808279 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(478.99997, 230.00003)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door50" parent="." unique_id=1348910618 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(478.99997, 299)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door51" parent="." unique_id=1265347003 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(478.99997, 369)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door52" parent="." unique_id=601498322 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(479, 439)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door53" parent="." unique_id=1361211766 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(478.99997, 509)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door54" parent="." unique_id=1700024202 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(478.99997, 586)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door55" parent="." unique_id=416212178 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(671, 542.00006)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door56" parent="." unique_id=902155107 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(671, 283.00015)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door57" parent="." unique_id=1998744553 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(671.00006, 216.00017)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door58" parent="." unique_id=1588842337 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(671.00006, 147.00015)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door59" parent="." unique_id=1784681057 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(671, 79.000175)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door60" parent="." unique_id=109105968 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(671.00006, 30.000196)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door61" parent="." unique_id=1393150874 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(735, 350.00015)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door62" parent="." unique_id=1683899341 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(735.00006, 411.00012)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door63" parent="." unique_id=787638822 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(863, 480.00015)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door64" parent="." unique_id=502707540 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(863, 540.0001)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door65" parent="." unique_id=1810313432 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(925.99994, 541.0001)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door66" parent="." unique_id=825427044 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(925.99994, 605.0001)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door67" parent="." unique_id=2076874937 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(989.99994, 349.0002)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door68" parent="." unique_id=615404523 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(990, 282.0002)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door69" parent="." unique_id=735569690 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(990, 224.00021)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door70" parent="." unique_id=575704541 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(926, 218.00023)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door71" parent="." unique_id=543170036 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(926, 154.00021)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door72" parent="." unique_id=662615754 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(925.99994, 86.00025)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door73" parent="." unique_id=169701617 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(926, 34.00025)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door74" parent="." unique_id=1575432345 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(798.99994, 31.000256)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")
+
+[node name="Door75" parent="." unique_id=282855273 instance=ExtResource("22_8hpns")]
+z_index = -1
+position = Vector2(799, 91.00025)
+scale = Vector2(0.57, 0.275)
+script = ExtResource("27_vpk5y")

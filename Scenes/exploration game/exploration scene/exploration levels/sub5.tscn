@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://nrca7f3lkkxg"]
 
+[ext_resource type="Script" uid="uid://cl65aumby6e6h" path="res://Scripts/exploration game/sub_1.gd" id="1_1r2jm"]
 [ext_resource type="Texture2D" uid="uid://cqjh45io6m55w" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="1_q8mym"]
 [ext_resource type="Texture2D" uid="uid://d08e3fyk4u0ek" path="res://Assets/exploration assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="2_4b8hw"]
 [ext_resource type="Texture2D" uid="uid://bp33ojib2y8i7" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/FENCE 1 - DAY.png" id="3_c2e8y"]
@@ -24,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="22_c2e8y"]
 [ext_resource type="Script" uid="uid://dd6rbesvhb48m" path="res://Scenes/exploration game/exploration scene/exploration buildings/door5.gd" id="23_c2e8y"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="24_u702x"]
+[ext_resource type="AudioStream" uid="uid://dmx4nv5wqur3i" path="res://Assets/music/Ashley Wave Trials by OddMod _ Geometry Dash [KrdMngKSLKc].mp3" id="25_tlrk8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_q8mym")
@@ -861,6 +863,7 @@ sources/19 = SubResource("TileSetAtlasSource_n2fwv")
 sources/20 = SubResource("TileSetAtlasSource_mue3k")
 
 [node name="LevelRoot" type="Node2D" unique_id=802563911]
+script = ExtResource("1_1r2jm")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2113119087]
 scale = Vector2(4, 4)
@@ -880,3 +883,8 @@ script = ExtResource("23_c2e8y")
 
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("24_u702x")]
 position = Vector2(30, 196)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1467677958]
+unique_name_in_owner = true
+stream = ExtResource("25_tlrk8")
+volume_db = -3.888
