@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://dk0kwvu6sm7qk" path="res://Assets/Sprites/All Food/pizza.png" id="21_c4ag7"]
 [ext_resource type="Script" uid="uid://p6n5cep8opas" path="res://Scenes/exploration game/exploration scene/exploration buildings/door_pizza.gd" id="21_dn24s"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="23_y4gr0"]
-[ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="24_byy0e"]
+[ext_resource type="AudioStream" uid="uid://fb6rkjqfalw4" path="res://Assets/music/A Whimsical Forest Adventure  Cute Animals & Relaxing Nature Sounds.mp3" id="24_byy0e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_c4ag7")
@@ -379,3 +379,4 @@ scale = Vector2(5, 5)
 position = Vector2(546, 596)
 scale = Vector2(5, 5)
 stream = ExtResource("24_byy0e")
+autoplay = true

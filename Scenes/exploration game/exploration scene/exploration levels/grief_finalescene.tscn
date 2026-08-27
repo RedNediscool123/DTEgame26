@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dh3b74cfp4bgg"]
+
+[ext_resource type="Texture2D" uid="uid://5kp0utp0m6wt" path="res://Assets/whole game assets/download (3).jpg" id="2_5ox4x"]
+[ext_resource type="PackedScene" uid="uid://bfetv5cxlstm1" path="res://Scenes/exploration game/exploration scene/player_grievances.tscn" id="3_q567l"]
+[ext_resource type="Texture2D" uid="uid://b50xyrcylba0" path="res://Assets/Sprites/All Food/sriracha.png" id="4_0v4rs"]
+[ext_resource type="AudioStream" uid="uid://dg5y5gml542qx" path="res://Assets/music/1 Hour of Dark and Mysterious Ambient Music for writing and creativity  Dnd  RPG Ambience.mp3" id="4_eelft"]
+[ext_resource type="Script" uid="uid://b0flwgwribc1c" path="res://Scripts/exploration game/grief_sauce.gd" id="5_0v4rs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(23, 61)
+
+[node name="LevelRoot" type="Node2D" unique_id=802563911]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=438718620]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_right = 1155.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5ox4x")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1548289178]
+stream = ExtResource("4_eelft")
+autoplay = true
+
+[node name="Player2" parent="." unique_id=1321761079 instance=ExtResource("3_q567l")]
+position = Vector2(575, 605)
+
+[node name="Sriracha" type="Sprite2D" parent="." unique_id=701968505]
+z_index = -1
+position = Vector2(578, 69)
+texture = ExtResource("4_0v4rs")
+
+[node name="Area2D" type="Area2D" parent="Sriracha" unique_id=621884233]
+script = ExtResource("5_0v4rs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sriracha/Area2D" unique_id=1338818070]
+position = Vector2(-2, -1)
+shape = SubResource("RectangleShape2D_g4v7s")

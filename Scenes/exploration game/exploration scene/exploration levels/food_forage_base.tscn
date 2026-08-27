@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="22_1uwnc"]
 [ext_resource type="Script" uid="uid://oa3dcinugeo0" path="res://Scenes/exploration game/exploration scene/exploration buildings/door2.gd" id="23_x0cwn"]
 [ext_resource type="Script" uid="uid://c43yv8qw8nfca" path="res://Scenes/exploration game/exploration scene/exploration buildings/door3.gd" id="24_w05lc"]
+[ext_resource type="AudioStream" uid="uid://fb6rkjqfalw4" path="res://Assets/music/A Whimsical Forest Adventure  Cute Animals & Relaxing Nature Sounds.mp3" id="26_x0cwn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_evgkf")
@@ -400,3 +401,7 @@ texture = ExtResource("21_t8kns")
 
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("22_1uwnc")]
 position = Vector2(222, 521)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=242222478]
+stream = ExtResource("26_x0cwn")
+autoplay = true

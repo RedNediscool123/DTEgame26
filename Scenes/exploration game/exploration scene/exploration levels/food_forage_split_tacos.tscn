@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://gjjhpsjmnubq" path="res://Assets/Sprites/All Food/taco.png" id="21_e6s3g"]
 [ext_resource type="Script" uid="uid://c51bdebrkh60i" path="res://Scenes/exploration game/exploration scene/exploration buildings/door_tacos.gd" id="21_sr8ba"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="23_goopn"]
-[ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="24_0e7df"]
+[ext_resource type="AudioStream" uid="uid://fb6rkjqfalw4" path="res://Assets/music/A Whimsical Forest Adventure  Cute Animals & Relaxing Nature Sounds.mp3" id="24_0e7df"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_e6s3g")
@@ -379,3 +379,4 @@ scale = Vector2(5, 5)
 position = Vector2(1104, 593)
 scale = Vector2(5, 5)
 stream = ExtResource("24_0e7df")
+autoplay = true

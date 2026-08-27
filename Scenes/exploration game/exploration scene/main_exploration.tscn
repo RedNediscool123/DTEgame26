@@ -31,6 +31,7 @@ position = Vector2(564, 305)
 unique_name_in_owner = true
 stream = ExtResource("7_iupy2")
 volume_db = -4.269
+autoplay = true
 
 [node name="Door2" parent="." unique_id=1235123588 instance=ExtResource("4_gdk0w")]
 position = Vector2(1137.3002, 624.91)

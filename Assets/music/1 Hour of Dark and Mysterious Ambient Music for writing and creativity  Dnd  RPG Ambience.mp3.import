@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dg5y5gml542qx"
+path="res://.godot/imported/1 Hour of Dark and Mysterious Ambient Music for writing and creativity  Dnd  RPG Ambience.mp3-d108d5858de2d13880acbc8795c7083c.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/1 Hour of Dark and Mysterious Ambient Music for writing and creativity  Dnd  RPG Ambience.mp3"
+dest_files=["res://.godot/imported/1 Hour of Dark and Mysterious Ambient Music for writing and creativity  Dnd  RPG Ambience.mp3-d108d5858de2d13880acbc8795c7083c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

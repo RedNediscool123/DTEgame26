@@ -899,3 +899,4 @@ position = Vector2(63, 561)
 unique_name_in_owner = true
 stream = ExtResource("26_gri8u")
 volume_db = -3.888
+autoplay = true
