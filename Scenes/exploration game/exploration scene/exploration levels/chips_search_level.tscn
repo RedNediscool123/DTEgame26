@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://d1xmhdlb8pk0o" path="res://Scenes/exploration game/exploration scene/exploration buildings/door.tscn" id="20_sq2i3"]
 [ext_resource type="Script" uid="uid://5yb1w6pjotfk" path="res://Scripts/exploration game/door_chips.gd" id="21_sjp87"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="22_sjp87"]
+[ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="23_1jbxo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_frmhn")
@@ -370,3 +371,6 @@ tile_set = SubResource("TileSet_g4v7s")
 
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("22_sjp87")]
 position = Vector2(104, 567)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=899956118]
+stream = ExtResource("23_1jbxo")

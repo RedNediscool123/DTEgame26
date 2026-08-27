@@ -30,7 +30,7 @@ position = Vector2(564, 305)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1850569914]
 unique_name_in_owner = true
 stream = ExtResource("7_q7j1g")
-volume_db = -4.269
+volume_db = 0.776
 
 [node name="Door2" parent="." unique_id=1235123588 instance=ExtResource("2_6ts1u")]
 position = Vector2(1137.3002, 624.91)
