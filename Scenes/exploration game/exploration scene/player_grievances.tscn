@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bfetv5cxlstm1"]
 
-[ext_resource type="Script" uid="uid://cfu67hfkg3xrb" path="res://Scripts/exploration game/player.gd" id="1_24gkc"]
+[ext_resource type="Script" uid="uid://dwh3xn7p67mbv" path="res://Scenes/exploration game/exploration scene/player_grievances.gd" id="1_24gkc"]
 [ext_resource type="Texture2D" uid="uid://bvcw5nh7rs0pi" path="res://Assets/exploration assets/player/Player.png" id="2_tlhbc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwa28"]
