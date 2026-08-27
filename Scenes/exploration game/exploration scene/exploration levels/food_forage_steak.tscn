@@ -23,6 +23,7 @@
 [ext_resource type="Script" uid="uid://c5vg3n7dym1m4" path="res://Scenes/exploration game/exploration scene/exploration buildings/door_steak.gd" id="21_aeiow"]
 [ext_resource type="Texture2D" uid="uid://b8etpyaywkwx3" path="res://Assets/Sprites/All Food/steak.png" id="21_jtem1"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="23_l7ubd"]
+[ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="24_x3gjx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("1_jtem1")
@@ -373,3 +374,6 @@ texture = ExtResource("21_jtem1")
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("23_l7ubd")]
 position = Vector2(594, 575.00006)
 scale = Vector2(5, 5)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1804694772]
+stream = ExtResource("24_x3gjx")

@@ -28,6 +28,7 @@
 	{ "anchor": "accept_quest" },
 	{"speaker": "You", "text": "Of course."},
 	{"speaker": "Lizard", "text": "Thank you, She should be out there, best of luck."},
+	{"speaker": "Lizard", "text": "She's a fast swimmer, so you might have luck searching near water."},
 	{"scene": "res://Scenes/exploration game/exploration scene/exploration levels/chips_search_level.tscn"},
 	{ "anchor": "chips_found" },
 	{"speaker": "You", "text": "I found her! She was hiding under a rock!."},

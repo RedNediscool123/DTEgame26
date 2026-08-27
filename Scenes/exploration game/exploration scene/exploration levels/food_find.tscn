@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://565x37n43fim" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png" id="20_5mw73"]
 [ext_resource type="Texture2D" uid="uid://bkl4jhubbdk3g" path="res://Assets/exploration assets/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png" id="21_ixbth"]
 [ext_resource type="PackedScene" uid="uid://dg6sbro7b6f1h" path="res://Scenes/exploration game/exploration scene/player.tscn" id="22_6t0nl"]
+[ext_resource type="AudioStream" uid="uid://ommkhjgp1tcs" path="res://Assets/music/forestbg.mp3" id="23_7yocd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j78kr"]
 texture = ExtResource("3_jc7e6")
@@ -370,3 +371,6 @@ tile_set = SubResource("TileSet_g4v7s")
 
 [node name="Player" parent="." unique_id=1321761079 instance=ExtResource("22_6t0nl")]
 position = Vector2(104, 567)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=302142071]
+stream = ExtResource("23_7yocd")
